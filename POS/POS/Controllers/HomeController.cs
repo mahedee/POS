@@ -10,7 +10,7 @@ namespace POS.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "This is changed.";
+            ViewBag.Message = "This is changed1.";
             ViewBag.mess = "Hi";
 
             return View();
