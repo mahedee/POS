@@ -10,7 +10,7 @@ namespace POS.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            ViewBag.Message = "This is changed.";
             ViewBag.mess = "Hi";
 
             return View();
