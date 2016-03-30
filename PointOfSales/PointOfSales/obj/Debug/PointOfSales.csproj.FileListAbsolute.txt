@@ -107,3 +107,4 @@ C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin
 C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\obj\Debug\PointOfSales.dll
 C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\obj\Debug\PointOfSales.pdb
+D:\Programming Guide\GitHub\POS\PointOfSales\PointOfSales\obj\Debug\PointOfSales.csprojResolveAssemblyReference.cache

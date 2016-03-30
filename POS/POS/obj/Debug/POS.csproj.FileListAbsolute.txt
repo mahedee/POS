@@ -136,3 +136,4 @@ C:\Users\Priom\Documents\GitHub\POS\POS\POS\bin\Microsoft.Owin.Security.Microsof
 C:\Users\Priom\Documents\GitHub\POS\POS\POS\obj\Debug\POS.dll
 C:\Users\Priom\Documents\GitHub\POS\POS\POS\obj\Debug\POS.pdb
 C:\Users\Priom\Documents\GitHub\POS\POS\POS\obj\Debug\POS.csprojResolveAssemblyReference.cache
+D:\Programming Guide\GitHub\POS\POS\POS\obj\Debug\POS.csprojResolveAssemblyReference.cache
