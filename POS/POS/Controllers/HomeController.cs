@@ -10,22 +10,19 @@ namespace POS.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "This is changed1.";
-            ViewBag.mess = "Hi";
-
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your app description page.";
+            ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "This is a test change by Priom Biswas";
+            ViewBag.Message = "Your contact page.";
 
             return View();
         }
