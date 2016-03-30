@@ -7,15 +7,15 @@ using System.Web;
 
 namespace POS.Models
 {
-    public class ProductCategory
+    public class Unit
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Display(Name = "Category Id")]
-        public int CategoryId { get; set; }
-
-        [StringLength(50,MinimumLength = 1)]
-        [Display(Name = "Category Name")]
-        public string CategoryName { get; set; }
+        [Display(Name = "Unit Id")]
+        public int UnitId { get; set; }
+        
+        [StringLength(50, MinimumLength = 1)]
+        [Display(Name = "Unit Name")]
+        public string UnitName { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}",
