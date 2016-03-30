@@ -1,0 +1,110 @@
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\PointOfSales.dll.config
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\PointOfSales.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\PointOfSales.pdb
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Antlr3.Runtime.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\EntityFramework.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\EntityFramework.SqlServer.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Newtonsoft.Json.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Owin.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.Helpers.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.Mvc.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.Optimization.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.Razor.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.WebPages.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.WebPages.Razor.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\WebGrease.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.Helpers.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.Mvc.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.Optimization.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.Razor.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.WebPages.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\System.Web.WebPages.Razor.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Antlr3.Runtime.pdb
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Newtonsoft.Json.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\EntityFramework.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\EntityFramework.SqlServer.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\obj\Debug\PointOfSales.csprojResolveAssemblyReference.cache
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\obj\Debug\PointOfSales.dll
+C:\Users\Priom\Documents\Visual Studio 2013\Projects\ASP.NET MVC\PointOfSales\PointOfSales\obj\Debug\PointOfSales.pdb
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\PointOfSales.dll.config
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\PointOfSales.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\PointOfSales.pdb
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Antlr3.Runtime.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\EntityFramework.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\EntityFramework.SqlServer.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Newtonsoft.Json.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Owin.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.Helpers.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.Mvc.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.Optimization.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.Razor.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.WebPages.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.WebPages.Razor.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\WebGrease.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.Helpers.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.Mvc.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.Optimization.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.Razor.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.WebPages.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\System.Web.WebPages.Razor.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Antlr3.Runtime.pdb
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Newtonsoft.Json.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\EntityFramework.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\EntityFramework.SqlServer.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\obj\Debug\PointOfSales.csprojResolveAssemblyReference.cache
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\obj\Debug\PointOfSales.dll
+C:\Users\Priom\Documents\GitHub\POS\PointOfSales\PointOfSales\obj\Debug\PointOfSales.pdb
