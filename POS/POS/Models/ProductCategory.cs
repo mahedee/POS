@@ -14,6 +14,7 @@ namespace POS.Models
         public int CategoryId { get; set; }
 
         [StringLength(50,MinimumLength = 1)]
+        [Display(Name = "Category Name")]
         public string CategoryName { get; set; }
 
         [DataType(DataType.Date)]

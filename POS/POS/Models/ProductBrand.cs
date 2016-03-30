@@ -14,6 +14,7 @@ namespace POS.Models
         public int BrandId { get; set; }
 
         [StringLength(50, MinimumLength = 1)]
+        [Display(Name = "Brand Name")]
         public string BrandName { get; set; }
 
         [DataType(DataType.Date)]

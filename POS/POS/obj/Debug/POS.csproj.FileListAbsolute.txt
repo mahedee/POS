@@ -135,3 +135,4 @@ C:\Users\Priom\Documents\GitHub\POS\POS\POS\bin\Microsoft.Owin.Security.Twitter.
 C:\Users\Priom\Documents\GitHub\POS\POS\POS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Priom\Documents\GitHub\POS\POS\POS\obj\Debug\POS.dll
 C:\Users\Priom\Documents\GitHub\POS\POS\POS\obj\Debug\POS.pdb
+C:\Users\Priom\Documents\GitHub\POS\POS\POS\obj\Debug\POS.csprojResolveAssemblyReference.cache

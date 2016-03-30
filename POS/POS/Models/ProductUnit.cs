@@ -14,6 +14,7 @@ namespace POS.Models
         public int UnitId { get; set; }
         
         [StringLength(50, MinimumLength = 1)]
+        [Display(Name = "Unit Name")]
         public string UnitName { get; set; }
 
         [DataType(DataType.Date)]
