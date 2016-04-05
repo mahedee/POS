@@ -19,7 +19,7 @@ namespace BOL
         //public DbSet<Category> Categories { set; get; }
         //public DbSet<Brand> Brands { set; get; }
         public DbSet<Measurement> Measurements { set; get; }
-       // public DbSet<Product> Products { set; get; }
+        public DbSet<Product> Products { set; get; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

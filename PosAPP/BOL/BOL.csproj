@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201604051218564_MeasurementAdd.Designer.cs">
       <DependentUpon>201604051218564_MeasurementAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604051337070_ProductTableAdd.cs" />
+    <Compile Include="Migrations\201604051337070_ProductTableAdd.Designer.cs">
+      <DependentUpon>201604051337070_ProductTableAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PosContext.cs" />
     <Compile Include="Product.cs" />
@@ -79,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604051218564_MeasurementAdd.resx">
       <DependentUpon>201604051218564_MeasurementAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604051337070_ProductTableAdd.resx">
+      <DependentUpon>201604051337070_ProductTableAdd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

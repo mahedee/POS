@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="DALFinancialYear.cs" />
     <Compile Include="DALMeasurement.cs" />
+    <Compile Include="DALProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

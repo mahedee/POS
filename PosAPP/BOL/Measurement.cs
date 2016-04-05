@@ -15,7 +15,6 @@ namespace BOL
         [Column(TypeName = "VARCHAR")]
         [StringLength(200)]
         public string Name { get; set; }
-
-        //public virtual Product Product { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
