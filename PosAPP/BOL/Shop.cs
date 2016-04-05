@@ -30,8 +30,10 @@ namespace BOL
         [StringLength(100)]
         public string Phone { get; set; }
 
-        public virtual ICollection<FinancialYear> FinancialYears { get; set; }
-        public virtual ICollection<Product>Products { get; set; }
+        public int FinancialYearId { get; set; }
+        [ForeignKey("FinancialYearId")]
+        public virtual FinancialYear FinancialYear { get; set; }
+        //public virtual ICollection<Product>Products { get; set; }
 
         //public virtual FinancialYear FinancialYear { get; set; }
         //public virtual Product Product { get; set; }

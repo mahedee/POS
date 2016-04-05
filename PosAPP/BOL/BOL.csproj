@@ -53,9 +53,13 @@
     <Compile Include="Category.cs" />
     <Compile Include="FinancialYear.cs" />
     <Compile Include="Measurement.cs" />
-    <Compile Include="Migrations\201604011032034_test1.cs" />
-    <Compile Include="Migrations\201604011032034_test1.Designer.cs">
-      <DependentUpon>201604011032034_test1.cs</DependentUpon>
+    <Compile Include="Migrations\201604041249078_InitialCreate.cs" />
+    <Compile Include="Migrations\201604041249078_InitialCreate.Designer.cs">
+      <DependentUpon>201604041249078_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604051218564_MeasurementAdd.cs" />
+    <Compile Include="Migrations\201604051218564_MeasurementAdd.Designer.cs">
+      <DependentUpon>201604051218564_MeasurementAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PosContext.cs" />
@@ -64,12 +68,17 @@
     <Compile Include="Shop.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604011032034_test1.resx">
-      <DependentUpon>201604011032034_test1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604041249078_InitialCreate.resx">
+      <DependentUpon>201604041249078_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604051218564_MeasurementAdd.resx">
+      <DependentUpon>201604051218564_MeasurementAdd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

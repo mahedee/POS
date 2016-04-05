@@ -14,12 +14,12 @@ namespace BOL
         {
 
         }
-        //public DbSet<FinancialYear> FinancialYears { set; get; }
+        public DbSet<FinancialYear> FinancialYears { set; get; }
         public DbSet<Shop> Shops { set; get; }
         //public DbSet<Category> Categories { set; get; }
         //public DbSet<Brand> Brands { set; get; }
-        //public DbSet<Measurement> Measurements { set; get; }
-        public DbSet<Product> Products { set; get; }
+        public DbSet<Measurement> Measurements { set; get; }
+       // public DbSet<Product> Products { set; get; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
