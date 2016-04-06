@@ -11,7 +11,6 @@ namespace BOL
     //[Table("tblMeasurement")]
     public class Measurement
     {
-        [Display(Name ="Measurement Id")]
         public int Id { get; set; }
 
         [Required(ErrorMessage ="Measurement Name is Required")]

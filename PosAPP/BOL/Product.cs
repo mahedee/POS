@@ -32,9 +32,7 @@ namespace BOL
         //[ForeignKey("CatId")]
         //public virtual Category Category { get; set; }
 
-        
         public int ShopId { get; set; }
-        [Display(Name = "Shop Id")]
         [ForeignKey("ShopId")]
         public virtual Shop Shop { get; set; }
 
@@ -43,10 +41,8 @@ namespace BOL
         //[ForeignKey("BrandId")]
         //public virtual Brand Brand { get; set; }
 
-        
         public int MeasurementId { get; set; }
         [ForeignKey("MeasurementId")]
-        [Display(Name = "Measurement Id")]
         public virtual Measurement Measurement { get; set; }
 
     }

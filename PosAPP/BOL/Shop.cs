@@ -13,7 +13,6 @@ namespace BOL
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
-        [Display(Name ="Shop Id")]
         public int Id { get; set; }
 
         [Display(Name ="Shop Name")]
@@ -28,11 +27,13 @@ namespace BOL
 
         [Display(Name = "Email Address")]
         [Column(TypeName = "VARCHAR")]
+        [EmailAddress(ErrorMessage ="Please Input Valid Email Address")]
         [StringLength(100)]
         public string Email { get; set; }
 
         [Display(Name = "Web Address")]
         [Column(TypeName = "VARCHAR")]
+        [RegularExpression(@"^http(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&amp;%\$#_]*)?$", ErrorMessage = "My Error Message")]
         [StringLength(100)]
         public string WebAddress { get; set; }
 
