@@ -12,8 +12,11 @@ namespace BOL
     public class Category
     {
         public int Id { get; set; }
+
+        [Required(ErrorMessage ="Category Name is Required")]
+        [Display(Name ="Category Name")]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(200)]
+        [StringLength(100)]
         public string Name { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }

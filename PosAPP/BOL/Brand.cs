@@ -13,8 +13,10 @@ namespace BOL
     {
         public int Id { get; set; }
 
+        [Required(ErrorMessage = "Brand Name is Required")]
+        [Display(Name ="Brand Name")]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(200)]
+        [StringLength(100)]
         public string Name { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }

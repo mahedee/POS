@@ -12,22 +12,33 @@ namespace BOL
     public class Shop
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
+        [Display(Name ="Shop Id")]
         public int Id { get; set; }
+
+        [Display(Name ="Shop Name")]
         [Column(TypeName = "VARCHAR")]
         [StringLength(200)]
         public string Name { get; set; }
 
+        [Display(Name ="Address")]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(200)]
+        [StringLength(300)]
         public string Address { get; set; }
+
+        [Display(Name = "Email Address")]
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
         public string Email { get; set; }
+
+        [Display(Name = "Web Address")]
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
         public string WebAddress { get; set; }
+
+        [Display(Name ="Phone Number")]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(100)]
+        [StringLength(20)]
         public string Phone { get; set; }
 
         public int FinancialYearId { get; set; }
