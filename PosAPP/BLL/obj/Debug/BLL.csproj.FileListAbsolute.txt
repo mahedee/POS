@@ -1,0 +1,9 @@
+D:\MVC 5\OMS\POS\PosAPP\BLL\bin\Debug\BLL.dll
+D:\MVC 5\OMS\POS\PosAPP\BLL\bin\Debug\BLL.pdb
+D:\MVC 5\OMS\POS\PosAPP\BLL\bin\Debug\BOL.dll
+D:\MVC 5\OMS\POS\PosAPP\BLL\bin\Debug\EntityFramework.dll
+D:\MVC 5\OMS\POS\PosAPP\BLL\bin\Debug\BOL.pdb
+D:\MVC 5\OMS\POS\PosAPP\BLL\bin\Debug\EntityFramework.xml
+D:\MVC 5\OMS\POS\PosAPP\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\MVC 5\OMS\POS\PosAPP\BLL\obj\Debug\BLL.dll
+D:\MVC 5\OMS\POS\PosAPP\BLL\obj\Debug\BLL.pdb

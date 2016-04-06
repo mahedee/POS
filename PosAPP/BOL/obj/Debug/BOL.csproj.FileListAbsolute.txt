@@ -10,3 +10,17 @@ D:\MVC 5\PosAPP\BOL\obj\Debug\BOL.dll
 D:\MVC 5\PosAPP\BOL\obj\Debug\BOL.pdb
 D:\MVC 5\PosAPP\BOL\obj\Debug\BOL.Migrations.test1.resources
 D:\MVC 5\PosAPP\BOL\obj\Debug\BOL.csproj.GenerateResource.Cache
+D:\MVC 5\OMS\POS\PosAPP\BOL\bin\Debug\BOL.dll.config
+D:\MVC 5\OMS\POS\PosAPP\BOL\bin\Debug\BOL.dll
+D:\MVC 5\OMS\POS\PosAPP\BOL\bin\Debug\BOL.pdb
+D:\MVC 5\OMS\POS\PosAPP\BOL\bin\Debug\EntityFramework.dll
+D:\MVC 5\OMS\POS\PosAPP\BOL\bin\Debug\EntityFramework.SqlServer.dll
+D:\MVC 5\OMS\POS\PosAPP\BOL\bin\Debug\EntityFramework.xml
+D:\MVC 5\OMS\POS\PosAPP\BOL\bin\Debug\EntityFramework.SqlServer.xml
+D:\MVC 5\OMS\POS\PosAPP\BOL\obj\Debug\BOL.dll
+D:\MVC 5\OMS\POS\PosAPP\BOL\obj\Debug\BOL.pdb
+D:\MVC 5\OMS\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.InitialCreate.resources
+D:\MVC 5\OMS\POS\PosAPP\BOL\obj\Debug\BOL.csproj.GenerateResource.Cache
+D:\MVC 5\OMS\POS\PosAPP\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+D:\MVC 5\OMS\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.MeasurementAdd.resources
+D:\MVC 5\OMS\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.ProductTableAdd.resources
