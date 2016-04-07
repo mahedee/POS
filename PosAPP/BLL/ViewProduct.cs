@@ -16,6 +16,8 @@ namespace BLL
             Name = product.Name;
             Stock = product.Stock;
             BarCode = product.BarCode;
+            CategoryId = product.CatId;
+            BrandId = product.BrandId;
             ShopId = product.ShopId;
         }
 
@@ -23,6 +25,8 @@ namespace BLL
         public string Name { get; set; }
         public int Stock { get; set; }
         public string BarCode { get; set; }
+        public int BrandId { get; set; }
+        public int CategoryId { get; set; }
         public int ShopId { get; set; }
         public int MeasurementId { get; set; }
       

@@ -28,20 +28,22 @@ namespace BOL
         [StringLength(15)]
         public string BarCode { get; set; }
 
-        [Display(Name = "Category Id")]
+        [Display(Name = "Category")]
         public int CatId { get; set; }
         [ForeignKey("CatId")]
         public virtual Category Category { get; set; }
 
+        [Display(Name = "Shop")]
         public int ShopId { get; set; }
         [ForeignKey("ShopId")]
         public virtual Shop Shop { get; set; }
 
-        [Display(Name = "Brand Id")]
+        [Display(Name = "Brand")]
         public int BrandId { get; set; }
         [ForeignKey("BrandId")]
         public virtual Brand Brand { get; set; }
 
+        [Display(Name = "Measurement")]
         public int MeasurementId { get; set; }
         [ForeignKey("MeasurementId")]
         public virtual Measurement Measurement { get; set; }
