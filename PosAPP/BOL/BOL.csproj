@@ -69,6 +69,18 @@
     <Compile Include="Migrations\201604070524181_BrandTableAdded.Designer.cs">
       <DependentUpon>201604070524181_BrandTableAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604070603302_CategoryTableAdded.cs" />
+    <Compile Include="Migrations\201604070603302_CategoryTableAdded.Designer.cs">
+      <DependentUpon>201604070603302_CategoryTableAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604070628128_CategoryModelChanged.cs" />
+    <Compile Include="Migrations\201604070628128_CategoryModelChanged.Designer.cs">
+      <DependentUpon>201604070628128_CategoryModelChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604070705165_ProductModelChanged.cs" />
+    <Compile Include="Migrations\201604070705165_ProductModelChanged.Designer.cs">
+      <DependentUpon>201604070705165_ProductModelChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PosContext.cs" />
     <Compile Include="Product.cs" />
@@ -93,6 +105,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604070524181_BrandTableAdded.resx">
       <DependentUpon>201604070524181_BrandTableAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070603302_CategoryTableAdded.resx">
+      <DependentUpon>201604070603302_CategoryTableAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070628128_CategoryModelChanged.resx">
+      <DependentUpon>201604070628128_CategoryModelChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070705165_ProductModelChanged.resx">
+      <DependentUpon>201604070705165_ProductModelChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -34,7 +34,10 @@ C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\bin\Debug\EntityFramework.SqlServ
 C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.InitialCreate.resources
 C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.MeasurementAdd.resources
 C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.ProductTableAdd.resources
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.BrandTableAdded.resources
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.CategoryTableAdded.resources
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.CategoryModelChanged.resources
 C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.csproj.GenerateResource.Cache
 C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.dll
 C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.pdb
-C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.BrandTableAdded.resources
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.ProductModelChanged.resources

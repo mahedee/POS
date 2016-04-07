@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DALBrand.cs" />
+    <Compile Include="DALCategory.cs" />
     <Compile Include="DALFinancialYear.cs" />
     <Compile Include="DALMeasurement.cs" />
     <Compile Include="DALProduct.cs" />

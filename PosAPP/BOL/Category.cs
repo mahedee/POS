@@ -11,7 +11,7 @@ namespace BOL
     [Table("tblCategory")]
     public class Category
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required(ErrorMessage ="Category Name is Required")]
