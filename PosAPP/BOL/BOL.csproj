@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Brand.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="FinancialYear.cs" />
     <Compile Include="Measurement.cs" />
     <Compile Include="Migrations\201604041249078_InitialCreate.cs" />

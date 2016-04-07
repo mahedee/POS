@@ -41,3 +41,4 @@ C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.csproj.GenerateReso
 C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.dll
 C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.pdb
 C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.ProductModelChanged.resources
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
