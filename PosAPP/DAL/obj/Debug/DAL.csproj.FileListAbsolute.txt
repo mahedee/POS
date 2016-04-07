@@ -12,3 +12,17 @@ D:\MVC 5\OMS\POS\PosAPP\DAL\bin\Debug\EntityFramework.SqlServer.xml
 D:\MVC 5\OMS\POS\PosAPP\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\MVC 5\OMS\POS\PosAPP\DAL\obj\Debug\DAL.dll
 D:\MVC 5\OMS\POS\PosAPP\DAL\obj\Debug\DAL.pdb
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\bin\Debug\DAL.dll.config
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\bin\Debug\DAL.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\bin\Debug\DAL.pdb
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\bin\Debug\BLL.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\bin\Debug\BOL.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\bin\Debug\EntityFramework.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\bin\Debug\BLL.pdb
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\bin\Debug\BOL.pdb
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\bin\Debug\EntityFramework.xml
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\obj\Debug\DAL.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\DAL\obj\Debug\DAL.pdb

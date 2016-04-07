@@ -11,6 +11,7 @@ namespace BOL
     [Table("tblProduct")]
     public class Product
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required(ErrorMessage ="Product Name is Required")]
@@ -44,6 +45,13 @@ namespace BOL
         public int MeasurementId { get; set; }
         [ForeignKey("MeasurementId")]
         public virtual Measurement Measurement { get; set; }
+
+        [Required(ErrorMessage = "Create/Modification Date is required.")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}",
+                       ApplyFormatInEditMode = true)]
+        [Display(Name = "Create/Modification Date")]
+        public DateTime ModifiedDate { get; set; }
 
     }
 }

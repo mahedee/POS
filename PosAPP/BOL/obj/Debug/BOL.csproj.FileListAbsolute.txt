@@ -24,3 +24,17 @@ D:\MVC 5\OMS\POS\PosAPP\BOL\obj\Debug\BOL.csproj.GenerateResource.Cache
 D:\MVC 5\OMS\POS\PosAPP\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
 D:\MVC 5\OMS\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.MeasurementAdd.resources
 D:\MVC 5\OMS\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.ProductTableAdd.resources
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\bin\Debug\BOL.dll.config
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\bin\Debug\BOL.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\bin\Debug\BOL.pdb
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\bin\Debug\EntityFramework.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\bin\Debug\EntityFramework.xml
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.InitialCreate.resources
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.MeasurementAdd.resources
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.ProductTableAdd.resources
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.csproj.GenerateResource.Cache
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.pdb
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BOL\obj\Debug\BOL.Migrations.BrandTableAdded.resources

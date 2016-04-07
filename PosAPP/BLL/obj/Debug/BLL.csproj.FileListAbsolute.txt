@@ -7,3 +7,12 @@ D:\MVC 5\OMS\POS\PosAPP\BLL\bin\Debug\EntityFramework.xml
 D:\MVC 5\OMS\POS\PosAPP\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\MVC 5\OMS\POS\PosAPP\BLL\obj\Debug\BLL.dll
 D:\MVC 5\OMS\POS\PosAPP\BLL\obj\Debug\BLL.pdb
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BLL\bin\Debug\BLL.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BLL\bin\Debug\BLL.pdb
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BLL\bin\Debug\BOL.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BLL\bin\Debug\EntityFramework.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BLL\bin\Debug\BOL.pdb
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BLL\bin\Debug\EntityFramework.xml
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BLL\obj\Debug\BLL.dll
+C:\Users\priom\Documents\GitHub\POS\PosAPP\BLL\obj\Debug\BLL.pdb

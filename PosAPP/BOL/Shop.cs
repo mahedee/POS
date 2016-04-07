@@ -12,7 +12,6 @@ namespace BOL
     public class Shop
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
         public int Id { get; set; }
 
         [Display(Name ="Shop Name")]
@@ -49,6 +48,13 @@ namespace BOL
 
         //public virtual FinancialYear FinancialYear { get; set; }
         //public virtual Product Product { get; set; }
+
+        [Required(ErrorMessage = "Create/Modification Date is required.")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}",
+                       ApplyFormatInEditMode = true)]
+        [Display(Name = "Create/Modification Date")]
+        public DateTime ModifiedDate { get; set; }
     }
 
 }
