@@ -1,0 +1,323 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var supplierList = ViewBag.Suppliers;
+    var productList = ViewBag.Products;
+}
+
+
+<div class="admin-blank-space"></div>
+<div class="panel panel-primary">
+    <div class="panel-heading"><h3>Purchase Information</h3></div>
+    <div class="panel-body">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-6">
+                    <label class="control-label">Invoice No</label>
+                    <input type="text" class="form-control" name="name" />
+                </div>
+                <div class="col-xs-6">
+                    <label class="control-label">Invoice Date</label>
+                    <input type="text" class="form-control" name="purchaseDate" id="purchaseDate" />
+                    <span class="error">Valid order date required (ex. MM-dd-yyyy)</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <label for="supplier-name">Supplier Name</label>
+                    @*<select id="supplier_name" class="form-control">
+                            <option value="">-Select-</option>
+                            <option value="1">Kashem </option>
+                            <option value="2">Salim</option>
+                        </select>*@
+                    @Html.DropDownList("Id", new SelectList(supplierList, "Id", "Name"), "-- Select Supplier --", new { @class = "form-control" })
+                </div>
+                <div class="col-xs-6">
+                    <label class="control-label">Remarks</label>
+                    <textarea class="form-control" name="remarks" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading"><h3>Purchase Details</h3></div>
+    <div class="panel-body">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-4">
+                    <label class="control-label">Product</label>
+                    @*<input type="text" class="form-control" name="product" id="product" />*@
+                    @*@Html.TextBox("product", new { htmlAttributes = new { @class = "form-control" } });*@
+                    @Html.DropDownList("Products", new SelectList(productList, "Id", "Name"), "-- Select Product --", new { @class = "form-control" })
+
+                </div>
+                <div class="col-xs-1">
+                    <label class="control-label">Qty</label>
+                    <input type="text" class="form-control" name="qty" id="qty" />
+                    <span class="error">Enter valid quantity</span>
+                </div>
+                <div class="col-xs-1">
+                    <label class="control-label">P.Rate</label>
+                    <input type="text" class="form-control" name="pRate" id="pRate" />
+                </div>
+                <div class="col-xs-1">
+                    <label class="control-label">S.Rate</label>
+                    <input type="text" class="form-control" name="sRate" id="sRate" />
+                    <span class="error">VEnter valid quantity</span>
+                </div>
+
+                <div class="col-xs-1">
+                    <label class="control-label">Vat %</label>
+                    <input type="text" class="form-control" name="vat" id="productVat" />
+                </div>
+
+                <div class="col-xs-1">
+                    <label class="control-label">Disc %</label>
+                    <input type="text" class="form-control" name="discount" id="productDiscount" />
+                </div>
+                <div class="col-xs-2">
+                    <label class="control-label">Sub Total</label>
+                    <input type="text" class="form-control" name="subTotal" id="subTotal" />
+                </div>
+                <div class="col-xs-1">
+                    <label class="control-label"></label>
+                    <input id="add" type="button" value="Add" style="padding:10px 20px" />
+                </div>
+
+            </div>
+            <div id="purchaseTable">
+
+            </div>
+            <br /><br />
+            <input id="saveButton" type="button" value="Save" style="padding:10px 20px" />
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+@section Scripts{
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $('#purchaseDate').datepicker({
+                dateFormat: 'mm-dd-yy'
+            });
+        });
+
+
+
+        //Start Add to Grid
+
+        $(function () {
+            var purchaseItems = [];
+            //Add button click function
+            $('#add').click(function () {
+                //alert('Yes working');
+        //debugger
+                var isValidItem = true;
+                if ($('#Products').val().trim() == '') {
+                    isValidItem = false;
+                    $('#Products').siblings('span.error').css('visibility', 'visible');
+                }
+                else {
+                    $('#Products').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                if ($('#qty').val().trim() == '') {
+                    isValidItem = false;
+                    $('#qty').siblings('span.error').css('visibility', 'visible');
+                }
+                else {
+                    $('#qty').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                if ($('#pRate').val().trim() == '') {
+                    isValidItem = false;
+                    $('#pRate').siblings('span.error').css('visibility', 'visible');
+                }
+                else {
+                    $('#pRate').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                if ($('#sRate').val().trim() == '') {
+                    isValidItem = false;
+                    $('#sRate').siblings('span.error').css('visibility', 'visible');
+                }
+                else {
+                    $('#sRate').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                if ($('#productVat').val().trim() == '') {
+                    isValidItem = false;
+                    $('#productVat').siblings('span.error').css('visibility', 'visible');
+                }
+                else {
+                    $('#productVat').siblings('span.error').css('visibility', 'hidden');
+                }
+
+
+                if ($('#productDiscount').val().trim() == '') {
+                    isValidItem = false;
+                    $('#productDiscount').siblings('span.error').css('visibility', 'visible');
+                }
+                else {
+                    $('#productDiscount').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                if ($('#subTotal').val().trim() == '') {
+                    isValidItem = false;
+                    $('#subTotal').siblings('span.error').css('visibility', 'visible');
+                }
+                else {
+                    $('#subTotal').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                if (isValidItem) {
+                    purchaseItems.push({
+                        //ProductName: $('#Products').val(),
+                        ProductName: $("#Products option:selected").text(),
+                        Quantity: parseFloat($('#qty').val().trim()),
+                        PurchaseRate: parseFloat($('#pRate').val().trim()),
+                        SalesRate: parseFloat($('#sRate').val().trim()),
+                        productVat: parseFloat($('#productVat').val().trim()),
+                        productDiscount: parseFloat($('#productDiscount').val().trim()),
+
+                        subTotal: parseFloat($('#qty').val().trim()) * parseFloat($('#pRate').val().trim())
+                    });
+
+
+                    ////Clear fields
+                    //$('#Products').val('').focus();
+                    //$('#qty,#pRate,#sRate,#productVat,#productDiscount').val('');
+                }
+
+                //populate order items
+                GeneratedItemsTable();
+
+            });
+
+            //function for show added items in table
+            function GeneratedItemsTable() {
+                //alert('Coming there');
+                if (purchaseItems.length > 0) {
+                    //alert(purchaseItems.length);
+                    var $table = $('<table class="table table-striped table-bordered table-hover" />');
+                    $table.append('<thead><tr class="danger"><th>Product</th><th>Quantity</th><th>P.Rate</th><th>S.Rate</th><th>Vat %</th><th>Disc %</th><th>Sub Total</th></tr></thead>');
+                    var $tbody = $('<tbody/>');
+                    $.each(purchaseItems, function (i, val) {
+                        var $row = $('<tr/>');
+                        $row.append($('<td/>').html(val.ProductName));
+                        $row.append($('<td/>').html(val.Quantity));
+                        $row.append($('<td/>').html(val.PurchaseRate));
+                        $row.append($('<td/>').html(val.SalesRate));
+                        $row.append($('<td/>').html(val.productVat));
+                        $row.append($('<td/>').html(val.productDiscount));
+                        $row.append($('<td/>').html(val.subTotal));
+                        $tbody.append($row);
+                    });
+                    $table.append($tbody);
+                    $('#purchaseTable').html($table);
+                }
+            }
+
+            $('#saveButton').click(function () {
+
+                alert('Yes you clicked');
+
+                //var isAllValid = true;
+                //if (orderItems.length == 0) {
+                //    $('#orderItems').html('<span style="color:red;">Please add order items</span>');
+                //    isAllValid = false;
+                //}
+
+                //if ($('#orderNo').val().trim() == '') {
+                //    $('#orderNo').siblings('span.error').css('visibility', 'visible');
+                //    isAllValid = false;
+                //}
+                //else {
+                //    $('#orderNo').siblings('span.error').css('visibility', 'hidden');
+                //}
+
+                //if ($('#orderDate').val().trim() == '') {
+                //    $('#orderDate').siblings('span.error').css('visibility', 'visible');
+                //    isAllValid = false;
+                //}
+                //else {
+                //    $('#orderDate').siblings('span.error').css('visibility', 'hidden');
+                //}
+
+                ////Save if valid
+                //if (isAllValid) {
+                //    var data = {
+                //        OrderNo: $('#orderNo').val().trim(),
+                //        OrderDate: $('#orderDate').val().trim(),
+                //        //Sorry forgot to add Description Field
+                //        Description: $('#description').val().trim(),
+                //        OrderDetails: orderItems
+                //    }
+
+                //    $(this).val('Please wait...');
+
+                //    $.ajax({
+                //        url: '/Home/SaveOrder',
+                //        type: "POST",
+                //        data: JSON.stringify(data),
+                //        dataType: "JSON",
+                //        contentType: "application/json",
+                //        success: function (d) {
+                //            //check is successfully save to database
+                //            if (d.status == true) {
+                //                //will send status from server side
+                //                alert('Successfully done.');
+                //                //clear form
+                //                orderItems = [];
+                //                $('#orderNo').val('');
+                //                $('#orderDate').val('');
+                //                $('#orderItems').empty();
+                //            }
+                //            else {
+                //                alert('Failed');
+                //            }
+                //            $('#submit').val('Save');
+                //        },
+                //        error: function () {
+                //            alert('Error. Please try again.');
+                //            $('#submit').val('Save');
+                //        }
+                //    });
+                //}
+                var isAllValid = true;
+                if (purchaseItems.length == 0) {
+                        $('#orderItems').html('<span style="color:red;">Please add order items</span>');
+                        isAllValid = false;
+                    }
+            });
+        });
+
+
+    </script>
+}
+
+<style>
+    /*Adding some css for looks good*/
+    span.error {
+        display: block;
+        visibility: hidden;
+        color: red;
+        font-size: 90%;
+    }
+</style>
+
+
