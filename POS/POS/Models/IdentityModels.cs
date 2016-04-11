@@ -37,6 +37,9 @@ namespace POS.Models
         public DbSet<Brand> Brands { set; get; }
         public DbSet<Measurement> Measurements { set; get; }
         public DbSet<Product> Products { set; get; }
+        public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Purchase> Purchases { get; set; }
+        public DbSet<PurchaseDetail> PurchaseDetails { get; set; }
 
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)
         //{

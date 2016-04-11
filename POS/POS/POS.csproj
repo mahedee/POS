@@ -167,6 +167,7 @@
     <Compile Include="Controllers\MeasurementController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ShopController.cs" />
+    <Compile Include="Controllers\SupplierController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -178,6 +179,10 @@
     <Compile Include="Migrations\201604101439553_firstMigration.Designer.cs">
       <DependentUpon>201604101439553_firstMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604110739210_secondMigration.cs" />
+    <Compile Include="Migrations\201604110739210_secondMigration.Designer.cs">
+      <DependentUpon>201604110739210_secondMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Brand.cs" />
@@ -188,7 +193,10 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Measurement.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Purchase.cs" />
+    <Compile Include="Models\PurchaseDetail.cs" />
     <Compile Include="Models\Shop.cs" />
+    <Compile Include="Models\Supplier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -280,6 +288,11 @@
     <Content Include="Views\Shop\Details.cshtml" />
     <Content Include="Views\Shop\Edit.cshtml" />
     <Content Include="Views\Shop\Index.cshtml" />
+    <Content Include="Views\Supplier\Create.cshtml" />
+    <Content Include="Views\Supplier\Delete.cshtml" />
+    <Content Include="Views\Supplier\Details.cshtml" />
+    <Content Include="Views\Supplier\Edit.cshtml" />
+    <Content Include="Views\Supplier\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -297,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604101439553_firstMigration.resx">
       <DependentUpon>201604101439553_firstMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604110739210_secondMigration.resx">
+      <DependentUpon>201604110739210_secondMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
