@@ -7,30 +7,28 @@
 
 
 <div class="admin-blank-space"></div>
-<div class="panel panel-primary">
-    <div class="panel-heading"><h3>Purchase Information</h3></div>
+<br/>
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        <h4>Purchase Information</h4>
+    </div>
     <div class="panel-body">
         <div class="form-group">
             <div class="row">
                 <div class="col-xs-6">
                     <label class="control-label">Invoice No</label>
-                    <input type="text" class="form-control" name="name" />
+                    <input type="text" class="form-control" name="name"/>
                 </div>
                 <div class="col-xs-6">
                     <label class="control-label">Invoice Date</label>
-                    <input type="text" class="form-control" name="purchaseDate" id="purchaseDate" />
+                    <input type="text" class="form-control" name="purchaseDate" id="purchaseDate"/>
                     <span class="error">Valid order date required (ex. MM-dd-yyyy)</span>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-6">
                     <label for="supplier-name">Supplier Name</label>
-                    @*<select id="supplier_name" class="form-control">
-                            <option value="">-Select-</option>
-                            <option value="1">Kashem </option>
-                            <option value="2">Salim</option>
-                        </select>*@
-                    @Html.DropDownList("Id", new SelectList(supplierList, "Id", "Name"), "-- Select Supplier --", new { @class = "form-control" })
+                    @Html.DropDownList("Id", new SelectList(supplierList, "Id", "Name"), "-- Select Supplier --", new {@class = "form-control"})
                 </div>
                 <div class="col-xs-6">
                     <label class="control-label">Remarks</label>
@@ -41,8 +39,8 @@
     </div>
 </div>
 
-<div class="panel panel-primary">
-    <div class="panel-heading"><h3>Purchase Details</h3></div>
+<div class="panel panel-danger">
+    <div class="panel-heading"><h4>Purchase Details</h4></div>
     <div class="panel-body">
         <div class="form-group">
             <div class="row">
@@ -77,13 +75,13 @@
                     <label class="control-label">Disc %</label>
                     <input type="text" class="form-control" name="discount" id="productDiscount" />
                 </div>
-                <div class="col-xs-2">
+                @*<div class="col-xs-2">
                     <label class="control-label">Sub Total</label>
                     <input type="text" class="form-control" name="subTotal" id="subTotal" />
-                </div>
+                </div>*@
                 <div class="col-xs-1">
                     <label class="control-label"></label>
-                    <input id="add" type="button" value="Add" style="padding:10px 20px" />
+                    <input id="add" type="button" value="Add" class="btn btn-danger" style="padding:10px 20px" />
                 </div>
 
             </div>
@@ -91,11 +89,10 @@
 
             </div>
             <br /><br />
-            <input id="saveButton" type="button" value="Save" style="padding:10px 20px" />
+            <input id="saveButton" type="button" value="Save" class="btn btn-danger" 
+                   style="padding:10px 20px" />
 
         </div>
-
-
     </div>
 </div>
 
@@ -116,16 +113,13 @@
             });
         });
 
-
-
         //Start Add to Grid
 
         $(function () {
             var purchaseItems = [];
             //Add button click function
             $('#add').click(function () {
-                //alert('Yes working');
-        //debugger
+                
                 var isValidItem = true;
                 if ($('#Products').val().trim() == '') {
                     isValidItem = false;
@@ -176,13 +170,13 @@
                     $('#productDiscount').siblings('span.error').css('visibility', 'hidden');
                 }
 
-                if ($('#subTotal').val().trim() == '') {
-                    isValidItem = false;
-                    $('#subTotal').siblings('span.error').css('visibility', 'visible');
-                }
-                else {
-                    $('#subTotal').siblings('span.error').css('visibility', 'hidden');
-                }
+                //if ($('#subTotal').val().trim() == '') {
+                //    isValidItem = false;
+                //    $('#subTotal').siblings('span.error').css('visibility', 'visible');
+                //}
+                //else {
+                //    $('#subTotal').siblings('span.error').css('visibility', 'hidden');
+                //}
 
                 if (isValidItem) {
                     purchaseItems.push({
@@ -193,7 +187,6 @@
                         SalesRate: parseFloat($('#sRate').val().trim()),
                         productVat: parseFloat($('#productVat').val().trim()),
                         productDiscount: parseFloat($('#productDiscount').val().trim()),
-
                         subTotal: parseFloat($('#qty').val().trim()) * parseFloat($('#pRate').val().trim())
                     });
 
@@ -206,6 +199,78 @@
                 //populate order items
                 GeneratedItemsTable();
 
+            });
+
+            $('#saveButton').click(function () {
+                var isAllValid = true;
+                if (purchaseItems.length == 0) {
+                    $('#purchaseItems').html('<span style="color:red;">Please add order items</span>');
+                    isAllValid = false;
+                }
+
+                if ($('#invoiceNo').val().trim() == '') {
+                    $('#invoiceNo').siblings('span.error').css('visibility', 'visible');
+                    isAllValid = false;
+                }
+                else {
+                    $('#invoiceNo').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                if ($('#purchaseDate').val().trim() == '') {
+                    $('#purchaseDate').siblings('span.error').css('visibility', 'visible');
+                    isAllValid = false;
+                }
+                else {
+                    $('#purchaseDate').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                //Save if valid
+                if (isAllValid) {
+                    var data = {
+                        InvoiceNo: $('#invoiceNo').val().trim(),
+                        PurchaseDate: $('#purchaseDate').val().trim(),
+                        SupplierId: $('#supplierId').val().trim(),
+                        Remarks: $('#remarks').val().trim(),
+                        Total: $('#total').val().trim(),
+                        Vat: $('#vat').val().trim(),
+                        Discount: $('#discount').val().trim(),
+                        PercentDiscount: $('#percentDiscount').val().trim(),
+                        GrandTotal: $('#grandTotal').val().trim(),
+                        DueTotal: $('#dueTotal').val().trim(),
+                        PurchaseDetails: purchaseItems
+                    }
+
+                    $(this).val('Please wait...');
+
+                    $.ajax({
+                        url: '/Purchase/SavePurchase',
+                        type: "POST",
+                        data: JSON.stringify(data),
+                        dataType: "JSON",
+                        contentType: "application/json",
+                        success: function (d) {
+                            //check is successfully save to database
+                            if (d.status == true) {
+                                //will send status from server side
+                                alert('Successfully done.');
+                                //clear form
+                                purchaseItems = [];
+                                $('#invoiceNo').val('');
+                                $('#invoiceDate').val('');
+                                $('#purchaseItems').empty();
+                            }
+                            else {
+                                alert('Failed');
+                            }
+                            $('#submit').val('Save');
+                        },
+                        error: function () {
+                            alert('Error. Please try again.');
+                            $('#submit').val('Save');
+                        }
+                    });
+                }
+                
             });
 
             //function for show added items in table
@@ -231,79 +296,6 @@
                     $('#purchaseTable').html($table);
                 }
             }
-
-            $('#saveButton').click(function () {
-
-                alert('Yes you clicked');
-
-                //var isAllValid = true;
-                //if (orderItems.length == 0) {
-                //    $('#orderItems').html('<span style="color:red;">Please add order items</span>');
-                //    isAllValid = false;
-                //}
-
-                //if ($('#orderNo').val().trim() == '') {
-                //    $('#orderNo').siblings('span.error').css('visibility', 'visible');
-                //    isAllValid = false;
-                //}
-                //else {
-                //    $('#orderNo').siblings('span.error').css('visibility', 'hidden');
-                //}
-
-                //if ($('#orderDate').val().trim() == '') {
-                //    $('#orderDate').siblings('span.error').css('visibility', 'visible');
-                //    isAllValid = false;
-                //}
-                //else {
-                //    $('#orderDate').siblings('span.error').css('visibility', 'hidden');
-                //}
-
-                ////Save if valid
-                //if (isAllValid) {
-                //    var data = {
-                //        OrderNo: $('#orderNo').val().trim(),
-                //        OrderDate: $('#orderDate').val().trim(),
-                //        //Sorry forgot to add Description Field
-                //        Description: $('#description').val().trim(),
-                //        OrderDetails: orderItems
-                //    }
-
-                //    $(this).val('Please wait...');
-
-                //    $.ajax({
-                //        url: '/Home/SaveOrder',
-                //        type: "POST",
-                //        data: JSON.stringify(data),
-                //        dataType: "JSON",
-                //        contentType: "application/json",
-                //        success: function (d) {
-                //            //check is successfully save to database
-                //            if (d.status == true) {
-                //                //will send status from server side
-                //                alert('Successfully done.');
-                //                //clear form
-                //                orderItems = [];
-                //                $('#orderNo').val('');
-                //                $('#orderDate').val('');
-                //                $('#orderItems').empty();
-                //            }
-                //            else {
-                //                alert('Failed');
-                //            }
-                //            $('#submit').val('Save');
-                //        },
-                //        error: function () {
-                //            alert('Error. Please try again.');
-                //            $('#submit').val('Save');
-                //        }
-                //    });
-                //}
-                var isAllValid = true;
-                if (purchaseItems.length == 0) {
-                        $('#orderItems').html('<span style="color:red;">Please add order items</span>');
-                        isAllValid = false;
-                    }
-            });
         });
 
 
