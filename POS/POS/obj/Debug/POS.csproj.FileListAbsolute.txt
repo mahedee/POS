@@ -107,7 +107,6 @@ C:\Users\priom\Documents\Github\POS\POS\POS\bin\Microsoft.Owin.Security.OAuth.xm
 C:\Users\priom\Documents\Github\POS\POS\POS\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\priom\Documents\Github\POS\POS\POS\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\priom\Documents\Github\POS\POS\POS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\priom\Documents\Github\POS\POS\POS\obj\Debug\POS.csprojResolveAssemblyReference.cache
 C:\Users\priom\Documents\Github\POS\POS\POS\obj\Debug\POS.Migrations.InitialCreate.resources
 C:\Users\priom\Documents\Github\POS\POS\POS\obj\Debug\POS.Migrations.firstMigration.resources
 C:\Users\priom\Documents\Github\POS\POS\POS\obj\Debug\POS.csproj.GenerateResource.Cache
