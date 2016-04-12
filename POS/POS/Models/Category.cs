@@ -13,6 +13,7 @@ namespace POS.Models
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        [RegularExpression(@"^([A-Z a-z ]+)*$", ErrorMessage = "Only characters are allowed!")]
         [Required(ErrorMessage = "Category Name is Required")]
         [Display(Name = "Category Name")]
         [Column(TypeName = "VARCHAR")]

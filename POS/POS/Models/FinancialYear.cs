@@ -27,7 +27,9 @@ namespace POS.Models
         [Display(Name = "End Date")]
         public DateTime EndingDate { get; set; }
 
-
+        [RegularExpression(@"^([A-Z a-z 0-9 -]+)*$", ErrorMessage = "Only characters, Numbers & '-' are allowed!")]
+        [Required(ErrorMessage = "Category Name is Required")]
+        [Display(Name = "Financial Year Name")]
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
         public string Name { get; set; }

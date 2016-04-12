@@ -13,12 +13,14 @@ namespace POS.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        [RegularExpression(@"^([A-Z a-z ]+)*$", ErrorMessage = "Only characters are allowed!")]
         [Required(ErrorMessage = "Product Name is Required")]
         [Display(Name = "Product Name")]
         [Column(TypeName = "VARCHAR")]
         [StringLength(150)]
         public string Name { get; set; }
 
+        [RegularExpression(@"^([A-Z a-z 0-9]+)*$", ErrorMessage = "Only characters & Numbers are allowed!")]
         [Display(Name = "Barcode")]
         [Column(TypeName = "VARCHAR")]
         [StringLength(15)]
@@ -44,6 +46,7 @@ namespace POS.Models
         [ForeignKey("MeasurementId")]
         public virtual Measurement Measurement { get; set; }
 
+        [RegularExpression(@"^([0-9 ]+)*$", ErrorMessage = "Only numbers are allowed!")]
         [Display(Name = "Stock")]
         public float Stock { get; set; }
 

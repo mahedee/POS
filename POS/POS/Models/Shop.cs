@@ -13,17 +13,20 @@ namespace POS.Models
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        [RegularExpression(@"^([A-Z a-z ]+)*$", ErrorMessage = "Only characters are allowed!")]
         [Required(ErrorMessage = "Shop name is required")]
         [Display(Name = "Shop Name")]
         [Column(TypeName = "VARCHAR")]
         [StringLength(200)]
         public string Name { get; set; }
 
+        [Required(ErrorMessage="Address is required")]
         [Display(Name = "Address")]
         [Column(TypeName = "VARCHAR")]
         [StringLength(300)]
         public string Address { get; set; }
 
+        [Required(ErrorMessage="Email address is required")]
         [Display(Name = "Email Address")]
         [Column(TypeName = "VARCHAR")]
         [EmailAddress(ErrorMessage = "Please Input Valid Email Address")]
@@ -32,10 +35,11 @@ namespace POS.Models
 
         [Display(Name = "Web Address")]
         [Column(TypeName = "VARCHAR")]
-        [RegularExpression(@"^http(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&amp;%\$#_]*)?$", ErrorMessage = "My Error Message")]
+        [RegularExpression(@"^http(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&amp;%\$#_]*)?$", ErrorMessage = "Please provide valid web address")]
         [StringLength(100)]
         public string WebAddress { get; set; }
 
+        [Required(ErrorMessage="Phone number is required")]
         [Display(Name = "Phone Number")]
         [Column(TypeName = "VARCHAR")]
         [StringLength(20)]
