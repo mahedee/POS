@@ -6,6 +6,14 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+
+    <!--Date Picker Start-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <!--Date Picker Start-->
 
 </head>
 <body>
@@ -63,8 +71,18 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+        $(function () {
+            $('.MyDate').datepicker({ dateFormat: 'dd MM yy', type:Text }).click(function () { $(this).focus(); });
+        });
+
+        $('input[type=date]').each(function () {
+            this.type = "text";
+        });
+    </script>
+
 </body>
 </html>
