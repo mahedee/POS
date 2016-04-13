@@ -193,6 +193,7 @@
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\CommonProperties.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\FinancialYear.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -200,6 +201,8 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Purchase.cs" />
     <Compile Include="Models\PurchaseDetail.cs" />
+    <Compile Include="Models\Sales.cs" />
+    <Compile Include="Models\SalesDetail.cs" />
     <Compile Include="Models\Shop.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

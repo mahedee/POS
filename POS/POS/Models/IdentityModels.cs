@@ -38,8 +38,12 @@ namespace POS.Models
         public DbSet<Measurement> Measurements { set; get; }
         public DbSet<Product> Products { set; get; }
         public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         public DbSet<Purchase> Purchases { get; set; }
         public DbSet<PurchaseDetail> PurchaseDetails { get; set; }
+        public DbSet<Sales> Saleses { get; set; }
+        public DbSet<SalesDetail> SalesDetails { get; set; }
+
 
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)
         //{
