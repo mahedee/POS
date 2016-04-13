@@ -113,5 +113,5 @@ C:\Users\priom\Documents\Github\POS\POS\POS\obj\Debug\POS.csproj.GenerateResourc
 C:\Users\priom\Documents\Github\POS\POS\POS\obj\Debug\POS.dll
 C:\Users\priom\Documents\Github\POS\POS\POS\obj\Debug\POS.pdb
 C:\Users\priom\Documents\Github\POS\POS\POS\obj\Debug\POS.Migrations.secondMigration.resources
-C:\Users\priom\Documents\Github\POS\POS\POS\obj\Debug\POS.csprojResolveAssemblyReference.cache
 C:\Users\priom\Documents\Github\POS\POS\POS\obj\Debug\POS.Migrations.thirdMigration.resources
+C:\Users\priom\Documents\Github\POS\POS\POS\obj\Debug\POS.Migrations.fourthMigration.resources

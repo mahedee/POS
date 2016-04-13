@@ -39,6 +39,6 @@ namespace POS.Models
         [StringLength(100)]
         public string Address { get; set; }
 
-        public virtual ICollection<Sales> Sales { get; set; }
+        //public virtual ICollection<Sales> Sales { get; set; }
     }
 }
