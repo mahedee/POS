@@ -1,249 +1,306 @@
 ﻿
 @{
     ViewBag.Title = "Index";
+
     var supplierList = ViewBag.Suppliers;
-    var productList = ViewBag.Products;
+    var productList = ViewBag.ProductId;
 }
 
+<h2>Purchase Information</h2>
+<div class="container" style="max-width:640px">
+    <div>
+        <div class="master">
+            <h4>Purchase Master</h4>
+            <table>
+                <tr>
+                    <td>Invoice No</td>
+                    <td>
+                        <input type="text" id="InvoiceNo" />
+                        <span class="error">Invoice no required</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Purchase Date</td>
+                    <td>
+                        <input type="text" id="PurchaseDate" />
+                        <span class="error">Valid order date required (ex. MM-dd-yyyy)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Supplier Name</td>
+                    <td>
+                        @Html.DropDownList("Suppliers", new SelectList(supplierList, "Id", "Name"), "-- Select Supplier --", new { @class = "form-control" })
+<span class="error">Item name required</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Remarks</td>
+                    <td>
+                        <textarea id="Remarks" style="width:100%"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vat</td>
+                    <td>
+                        <textarea id="Vat" style="width:100%"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+                    <td>
+                        <textarea id="Discount" style="width:100%"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Grand Total</td>
+                    <td>
+                        <textarea id="GrandTotal" style="width:100%"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Due Total</td>
+                    <td>
+                        <textarea id="DueTotal" style="width:100%"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="details">
+            <h4>Purchase Details</h4>
+            <table width="100%">
+                <tr>
+                    <td>Product Name</td>
+                    <td>Barcode</td>
+                    <td>Quantity</td>
+                    <td>Purchase Rate</td>
+                    <td>Sales Rate</td>
+                    <td>Sub Total</td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DropDownList("ProductId", new SelectList(productList, "Id", "Name"), "-- Select Product --", new { @class = "form-control" })
+                        <span class="error">Item name required</span>
+                    </td>
+                    <td>
+                        <input type="text" id="Barcode" />
+                        <span class="error">Barcode is required</span>
+                    </td>
+                    <td>
+                        <input type="text" id="Quantity" />
+                        <span class="error">Valid quantity required</span>
+                    </td>
+                    <td>
+                        <input type="text" id="PRate" />
+                        <span class="error">Valid purchase rate required</span>
+                    </td>
+                    <td>
+                        <input type="text" id="SRate" />
+                        <span class="error">Valid sales rate required</span>
+                    </td>
+                    <td>
+                        <input type="text" id="SubTotal" />
+                    </td>
+                    <td>
+                        <input type="button" id="add" value="add" />
+                    </td>
+                </tr>
+            </table>
+            <div id="PurchaseItems" class="tablecontainer">
 
-<div class="admin-blank-space"></div>
-<br/>
-<div class="panel panel-danger">
-    <div class="panel-heading">
-        <h4>Purchase Information</h4>
-    </div>
-    <div class="panel-body">
-        <div class="form-group">
-            <div class="row">
-                <div class="col-xs-6">
-                    <label class="control-label">Invoice No</label>
-                    <input type="text" class="form-control" name="name"/>
-                </div>
-                <div class="col-xs-6">
-                    <label class="control-label">Invoice Date</label>
-                    <input type="text" class="form-control" name="purchaseDate" id="purchaseDate" />
-                    <span class="error">Valid order date required (ex. MM-dd-yyyy)</span>
-                </div>
             </div>
-            <div class="row">
-                <div class="col-xs-6">
-                    <label for="supplier-name">Supplier Name</label>
-                    @Html.DropDownList("Id", new SelectList(supplierList, "Id", "Name"), "-- Select Supplier --", new {@class = "form-control"})
-                </div>
-                <div class="col-xs-6">
-                    <label class="control-label">Remarks</label>
-                    <textarea class="form-control" name="remarks" rows="3"></textarea>
-                </div>
+            <div style="padding:10px 0px; text-align:right">
+                <input id="submit" type="button" value="Save" style="padding:10px 20px" />
             </div>
         </div>
     </div>
 </div>
-
-<div class="panel panel-danger">
-    <div class="panel-heading"><h4>Purchase Details</h4></div>
-    <div class="panel-body">
-        <div class="form-group">
-            <div class="row">
-                <div class="col-xs-4">
-                    <label class="control-label">Product</label>
-                    @*<input type="text" class="form-control" name="product" id="product" />*@
-                    @*@Html.TextBox("product", new { htmlAttributes = new { @class = "form-control" } });*@
-                    @Html.DropDownList("Products", new SelectList(productList, "Id", "Name"), "-- Select Product --", new { @class = "form-control" })
-
-                </div>
-                <div class="col-xs-1">
-                    <label class="control-label">Qty</label>
-                    <input type="text" class="form-control" name="qty" id="qty" />
-                    <span class="error">Enter valid quantity</span>
-                </div>
-                <div class="col-xs-1">
-                    <label class="control-label">P.Rate</label>
-                    <input type="text" class="form-control" name="pRate" id="pRate" />
-                </div>
-                <div class="col-xs-1">
-                    <label class="control-label">S.Rate</label>
-                    <input type="text" class="form-control" name="sRate" id="sRate" />
-                    <span class="error">VEnter valid quantity</span>
-                </div>
-
-                <div class="col-xs-1">
-                    <label class="control-label">Vat %</label>
-                    <input type="text" class="form-control" name="vat" id="productVat" />
-                </div>
-
-                <div class="col-xs-1">
-                    <label class="control-label">Disc %</label>
-                    <input type="text" class="form-control" name="discount" id="productDiscount" />
-                </div>
-                @*<div class="col-xs-2">
-                    <label class="control-label">Sub Total</label>
-                    <input type="text" class="form-control" name="subTotal" id="subTotal" />
-                </div>*@
-                <div class="col-xs-1">
-                    <label class="control-label"></label>
-                    <input id="add" type="button" value="Add" class="btn btn-danger" style="padding:10px 20px" />
-                </div>
-
-            </div>
-            <div id="purchaseTable">
-
-            </div>
-            <br /><br />
-            <input id="saveButton" type="button" value="Save" class="btn btn-danger" 
-                   style="padding:10px 20px" />
-
-        </div>
-    </div>
-</div>
-
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
 @section Scripts{
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-    <script type="text/javascript">
-
+    <script>
+        //Date Picker
         $(function () {
-            $('#purchaseDate').datepicker({
+            $('#PurchaseDate').datepicker({
                 dateFormat: 'mm-dd-yy'
             });
         });
 
-        //Start Add to Grid
-
-        $(function () {
-            var purchaseItems = [];
+        $(document).ready(function () {
+            var PurchaseItems = [];
             //Add button click function
             $('#add').click(function () {
-                
+                //Check validation of order item
                 var isValidItem = true;
-                if ($('#Products').val().trim() == '') {
+                if ($('#ProductId').val().trim() == '') {
                     isValidItem = false;
-                    $('#Products').siblings('span.error').css('visibility', 'visible');
+                    $('#ProductId').siblings('span.error').css('visibility', 'visible');
                 }
                 else {
-                    $('#Products').siblings('span.error').css('visibility', 'hidden');
+                    $('#ProductId').siblings('span.error').css('visibility', 'hidden');
                 }
 
-                if ($('#qty').val().trim() == '') {
+                if (!($('#Barcode').val().trim() != '' && !isNaN($('#Barcode').val().trim()))) {
                     isValidItem = false;
-                    $('#qty').siblings('span.error').css('visibility', 'visible');
+                    $('#Barcode').siblings('span.error').css('visibility', 'visible');
                 }
                 else {
-                    $('#qty').siblings('span.error').css('visibility', 'hidden');
+                    $('#Barcode').siblings('span.error').css('visibility', 'hidden');
                 }
 
-                if ($('#pRate').val().trim() == '') {
+                if (!($('#Quantity').val().trim() != '' && !isNaN($('#Quantity').val().trim()))) {
                     isValidItem = false;
-                    $('#pRate').siblings('span.error').css('visibility', 'visible');
+                    $('#Quantity').siblings('span.error').css('visibility', 'visible');
                 }
                 else {
-                    $('#pRate').siblings('span.error').css('visibility', 'hidden');
+                    $('#Quantity').siblings('span.error').css('visibility', 'hidden');
                 }
 
-                if ($('#sRate').val().trim() == '') {
+                if (!($('#PRate').val().trim() != '' && !isNaN($('#PRate').val().trim()))) {
                     isValidItem = false;
-                    $('#sRate').siblings('span.error').css('visibility', 'visible');
+                    $('#PRate').siblings('span.error').css('visibility', 'visible');
                 }
                 else {
-                    $('#sRate').siblings('span.error').css('visibility', 'hidden');
+                    $('#PRate').siblings('span.error').css('visibility', 'hidden');
                 }
 
-                if ($('#productVat').val().trim() == '') {
+                if (!($('#SRate').val().trim() != '' && !isNaN($('#SRate').val().trim()))) {
                     isValidItem = false;
-                    $('#productVat').siblings('span.error').css('visibility', 'visible');
+                    $('#SRate').siblings('span.error').css('visibility', 'visible');
                 }
                 else {
-                    $('#productVat').siblings('span.error').css('visibility', 'hidden');
+                    $('#SRate').siblings('span.error').css('visibility', 'hidden');
                 }
 
-
-                if ($('#productDiscount').val().trim() == '') {
+                if (!($('#SubTotal').val().trim() != '' && !isNaN($('#SubTotal').val().trim()))) {
                     isValidItem = false;
-                    $('#productDiscount').siblings('span.error').css('visibility', 'visible');
+                    $('#SubTotal').siblings('span.error').css('visibility', 'visible');
                 }
                 else {
-                    $('#productDiscount').siblings('span.error').css('visibility', 'hidden');
+                    $('#SubTotal').siblings('span.error').css('visibility', 'hidden');
                 }
 
-                //if ($('#subTotal').val().trim() == '') {
-                //    isValidItem = false;
-                //    $('#subTotal').siblings('span.error').css('visibility', 'visible');
-                //}
-                //else {
-                //    $('#subTotal').siblings('span.error').css('visibility', 'hidden');
-                //}
-
+                //Add item to list if valid
                 if (isValidItem) {
-                    purchaseItems.push({
-                        //ProductName: $('#Products').val(),
-                        ProductName: $("#Products option:selected").text(),
-                        Quantity: parseFloat($('#qty').val().trim()),
-                        PurchaseRate: parseFloat($('#pRate').val().trim()),
-                        SalesRate: parseFloat($('#sRate').val().trim()),
-                        productVat: parseFloat($('#productVat').val().trim()),
-                        productDiscount: parseFloat($('#productDiscount').val().trim()),
-                        subTotal: parseFloat($('#qty').val().trim()) * parseFloat($('#pRate').val().trim())
+                    PurchaseItems.push({
+                        Product: {
+                            Name: $("#ProductId option:selected").text(),
+                            Id: $("#ProductId option:selected").val()
+                        },
+                        Barcode: $('#Barcode').val().trim(),
+                        Quantity: parseInt($('#Quantity').val().trim()),
+                        PRate: parseInt($('#PRate').val().trim()),
+                        SRate: parseInt($('#SRate').val().trim()),
+                        //SubTotal: parseFloat($('#SubTotal').val().trim()),
+                        SubTotal: parseInt($('#Quantity').val().trim()) * parseFloat($('#PRate').val().trim())
                     });
 
+                    //Clear fields
+                    $('#ProductName').val('').focus();
+                    $('#Barcode,#Quantity,#PRate,#SRate,#SubTotal').val('');
 
-                    ////Clear fields
-                    //$('#Products').val('').focus();
-                    //$('#qty,#pRate,#sRate,#productVat,#productDiscount').val('');
                 }
-
                 //populate order items
                 GeneratedItemsTable();
 
             });
-
-            $('#saveButton').click(function () {
+            //Save button click function
+            $('#submit').click(function () {
+                //validation of order
                 var isAllValid = true;
-                if (purchaseItems.length == 0) {
-                    $('#purchaseItems').html('<span style="color:red;">Please add order items</span>');
+                if (PurchaseItems.length == 0) {
+                    $('#PurchaseItems').html('<span style="color:red;">Please add order items</span>');
                     isAllValid = false;
                 }
 
-                if ($('#invoiceNo').val().trim() == '') {
-                    $('#invoiceNo').siblings('span.error').css('visibility', 'visible');
+                if ($('#InvoiceNo').val().trim() == '') {
+                    $('#InvoiceNo').siblings('span.error').css('visibility', 'visible');
                     isAllValid = false;
                 }
                 else {
-                    $('#invoiceNo').siblings('span.error').css('visibility', 'hidden');
+                    $('#InvoiceNo').siblings('span.error').css('visibility', 'hidden');
                 }
 
-                if ($('#purchaseDate').val().trim() == '') {
-                    $('#purchaseDate').siblings('span.error').css('visibility', 'visible');
+                if ($('#PurchaseDate').val().trim() == '') {
+                    $('#PurchaseDate').siblings('span.error').css('visibility', 'visible');
                     isAllValid = false;
                 }
                 else {
-                    $('#purchaseDate').siblings('span.error').css('visibility', 'hidden');
+                    $('#PurchaseDate').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                //if ($('#SupplierId').val().trim() == '') {
+                //    $('#SupplierId').siblings('span.error').css('visibility', 'visible');
+                //    isAllValid = false;
+                //}
+                //else {
+                //    $('#SupplierId').siblings('span.error').css('visibility', 'hidden');
+                //}
+
+                if ($('#Remarks').val().trim() == '') {
+                    $('#Remarks').siblings('span.error').css('visibility', 'visible');
+                    isAllValid = false;
+                }
+                else {
+                    $('#Remarks').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                if ($('#Vat').val().trim() == '') {
+                    $('#Vat').siblings('span.error').css('visibility', 'visible');
+                    isAllValid = false;
+                }
+                else {
+                    $('#Vat').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                if ($('#Discount').val().trim() == '') {
+                    $('#Discount').siblings('span.error').css('visibility', 'visible');
+                    isAllValid = false;
+                }
+                else {
+                    $('#Discount').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                if ($('#GrandTotal').val().trim() == '') {
+                    $('#GrandTotal').siblings('span.error').css('visibility', 'visible');
+                    isAllValid = false;
+                }
+                else {
+                    $('#GrandTotal').siblings('span.error').css('visibility', 'hidden');
+                }
+
+                if ($('#DueTotal').val().trim() == '') {
+                    $('#DueTotal').siblings('span.error').css('visibility', 'visible');
+                    isAllValid = false;
+                }
+                else {
+                    $('#DueTotal').siblings('span.error').css('visibility', 'hidden');
                 }
 
                 //Save if valid
                 if (isAllValid) {
                     var data = {
-                        InvoiceNo: $('#invoiceNo').val().trim(),
-                        PurchaseDate: $('#purchaseDate').val().trim(),
-                        SupplierId: $('#supplierId').val().trim(),
-                        Remarks: $('#remarks').val().trim(),
-                        Total: $('#total').val().trim(),
-                        Vat: $('#vat').val().trim(),
-                        Discount: $('#discount').val().trim(),
-                        PercentDiscount: $('#percentDiscount').val().trim(),
-                        GrandTotal: $('#grandTotal').val().trim(),
-                        DueTotal: $('#dueTotal').val().trim(),
-                        PurchaseDetails: purchaseItems
+                        InvoiceNo: $('#InvoiceNo').val().trim(),
+                        PurchaseDate: $('#PurchaseDate').val().trim(),
+                        Suppliers: {
+                            Name: $("#Suppliers option:selected").text(),
+                            Id: $("#Suppliers option:selected").val()
+                        },
+                        //SupplierId: $('#SupplierId').val().trim(),
+                        Remarks: $('#Remarks').val().trim(),
+                        Vat: $('#Vat').val().trim(),
+                        Discount: $('#Discount').val().trim(),
+                        //Sorry forgot to add Description Field
+                        GrandTotal: $('#GrandTotal').val().trim(),
+                        DueTotal: $('#DueTotal').val().trim(),
+                        PurchaseDetails: PurchaseItems
                     }
 
                     $(this).val('Please wait...');
 
                     $.ajax({
-                        url: '/Purchase/SavePurchase',
+                        url: '/Purchase/SaveOrder',
                         type: "POST",
                         data: JSON.stringify(data),
                         dataType: "JSON",
@@ -254,10 +311,16 @@
                                 //will send status from server side
                                 alert('Successfully done.');
                                 //clear form
-                                purchaseItems = [];
-                                $('#invoiceNo').val('');
-                                $('#invoiceDate').val('');
-                                $('#purchaseItems').empty();
+                                PurchaseItems = [];
+                                $('#InvoiceNo').val('');
+                                $('#PurchaseDate').val('');
+                                $('#SupplierId').val('');
+                                $('#Remarks').val('');
+                                $('#Vat').val('');
+                                $('#Discount').val('');
+                                $('#GrandTotal').val('');
+                                $('#DueTotal').val('');
+                                $('#PurchaseItems').empty();
                             }
                             else {
                                 alert('Failed');
@@ -270,34 +333,30 @@
                         }
                     });
                 }
-                
-            });
 
+            });
             //function for show added items in table
             function GeneratedItemsTable() {
-                //alert('Coming there');
-                if (purchaseItems.length > 0) {
-                    //alert(purchaseItems.length);
-                    var $table = $('<table class="table table-striped table-bordered table-hover" />');
-                    $table.append('<thead><tr class="danger"><th>Product</th><th>Quantity</th><th>P.Rate</th><th>S.Rate</th><th>Vat %</th><th>Disc %</th><th>Sub Total</th></tr></thead>');
+                if (PurchaseItems.length > 0) {
+                    var $table = $('<table/>');
+                    $table.append('<thead><tr><th>Product</th><th>Barcode</th><th>Quantity</th><th>PRate</th><th>SRate</th><th>SubTotal</th></tr></thead>');
                     var $tbody = $('<tbody/>');
-                    $.each(purchaseItems, function (i, val) {
+                    $.each(PurchaseItems, function (i, val) {
                         var $row = $('<tr/>');
-                        $row.append($('<td/>').html(val.ProductName));
+                        $row.append($('<td/>').html(val.Product.Name));
+                        $row.append($('<td/>').html(val.Barcode));
                         $row.append($('<td/>').html(val.Quantity));
-                        $row.append($('<td/>').html(val.PurchaseRate));
-                        $row.append($('<td/>').html(val.SalesRate));
-                        $row.append($('<td/>').html(val.productVat));
-                        $row.append($('<td/>').html(val.productDiscount));
-                        $row.append($('<td/>').html(val.subTotal));
+                        $row.append($('<td/>').html(val.PRate));
+                        $row.append($('<td/>').html(val.SRate));
+                        //$row.append($('<td/>').html(val.SubTotal));
+                        $row.append($('<td/>').html(val.SubTotal));
                         $tbody.append($row);
                     });
                     $table.append($tbody);
-                    $('#purchaseTable').html($table);
+                    $('#PurchaseItems').html($table);
                 }
             }
         });
-
 
     </script>
 }
@@ -310,6 +369,32 @@
         color: red;
         font-size: 90%;
     }
+
+
+    /*css for table*/
+    .container td {
+        vertical-align: top;
+    }
+
+    .tablecontainer table {
+        width: 100%;
+        border-collapse: collapse;
+        border-top: 1px solid #BFAEAE;
+        border-right: 1px solid #BFAEAE;
+    }
+
+    .tablecontainer th {
+        border-bottom: 2px solid #BFAEAE !important;
+    }
+
+    .tablecontainer th, .tablecontainer td {
+        text-align: left;
+        border-left: 1px solid #BFAEAE;
+        padding: 5px;
+        border-bottom: 1px solid #BFAEAE;
+    }
+
+    .ui-widget {
+        font-size: 12px !important;
+    }
 </style>
-
-

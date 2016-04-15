@@ -10,18 +10,23 @@ namespace POS.Models
     [Table("Purchase")]
     public class Purchase : CommonProperties
     {
+        //public Purchase()
+        //{
+        //    this.PurchaseDetails = new HashSet<PurchaseDetail>();
+        //}
+
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Please enter an invoice number")]
+        //[Required(ErrorMessage = "Please enter an invoice number")]
         [Column(TypeName = "VARCHAR")]
         [StringLength(100)]
         public string InvoiceNo { get; set; }
 
-        [Required(ErrorMessage = "Please select a date")]
+        //[Required(ErrorMessage = "Please select a date")]
         public DateTime PurchaseDate { get; set; }
 
-        [Required(ErrorMessage = "Please choose a supplier")]
+        //[Required(ErrorMessage = "Please choose a supplier")]
         public int SupplierId { get; set; }
 
         [ForeignKey("SupplierId")]
@@ -31,19 +36,20 @@ namespace POS.Models
         [StringLength(100)]
         public string Remarks { get; set; }
 
-        [Required]
-        [Range(0.01, double.MaxValue, ErrorMessage = "Please enter a positive total")]
-        public double Total { get; set; }
+        //[Required]
+        //[Range(0.01, double.MaxValue, ErrorMessage = "Please enter a positive total")]
+        //public double Total { get; set; }
 
         public double Vat { get; set; }
         public double Discount { get; set; }
-        public double PercentDiscount { get; set; }
-
-        [Required]
-        [Range(0.01, double.MaxValue, ErrorMessage = "Please enter a positive grand total")]
         public double GrandTotal { get; set; }
-
         public double DueTotal { get; set; }
+
+        //public double PercentDiscount { get; set; }
+
+        //[Required]
+        //[Range(0.01, double.MaxValue, ErrorMessage = "Please enter a positive grand total")]
+        
 
         public virtual ICollection<PurchaseDetail> PurchaseDetails { get; set; }
     }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using POS.Models;
+using System.Data.Entity;
 
 namespace POS.Controllers
 {
@@ -17,36 +18,29 @@ namespace POS.Controllers
             ViewBag.Suppliers = supplierList;
 
             var productList = db.Products.ToList();
-            ViewBag.Products = productList;
+            ViewBag.ProductId = productList;
             return View();
         }
 
         [HttpPost]
-        public JsonResult SavePurchase(Purchase objPurchase)
+        public JsonResult SaveOrder(Purchase objPurchase)
         {
             bool status = false;
             if (ModelState.IsValid)
             {
-                using (db)
+                using (ApplicationDbContext dc = new ApplicationDbContext())
                 {
-                    db.Purchases.Add(objPurchase);
-                    db.SaveChanges();
-                    status = true;  
+                    //Order order = new Order { OrderNo = O.OrderNo, OrderDate = O.OrderDate, Description = O.Description };
+                    //foreach (var i in objOrder.OrderDetails)
+                    //{
+                    //    //
+                    //    // i.TotalAmount = 
+                    //    order.OrderDetails.Add(i);
+                    //}
+                    dc.Purchases.Add(objPurchase);
+                    dc.SaveChanges();
+                    status = true;
                 }
-                
-                //using (DemoDBContext dc = new DemoDBContext())
-                //{
-                //    //////Order order = new Order { OrderNo = O.OrderNo, OrderDate = O.OrderDate, Description = O.Description };
-                //    //////foreach (var i in objOrder.OrderDetails)
-                //    //////{
-                //    //////    //
-                //    //////    // i.TotalAmount = 
-                //    //////    order.OrderDetails.Add(i);
-                //    //////}
-                //    dc.Order.Add(objOrder);
-                //    dc.SaveChanges();
-                //    status = true;
-                //}
             }
             else
             {
@@ -54,5 +48,73 @@ namespace POS.Controllers
             }
             return new JsonResult { Data = new { status = status } };
         }
+
+
+
+
+
+        //[HttpPost]
+        //public JsonResult SaveOrder(Purchase O)
+        //{
+        //    bool status = false;
+        //    if (ModelState.IsValid)
+        //    {
+        //        using (ApplicationDbContext db = new ApplicationDbContext())
+        //        {
+        //            Purchase purchase = new Purchase { InvoiceNo = O.InvoiceNo, PurchaseDate = O.PurchaseDate, SupplierId = O.SupplierId, Remarks = O.Remarks };
+
+        //            foreach (var i in O.PurchaseDetails)
+        //            {
+        //                purchase.PurchaseDetails.Add(i);
+        //            }
+        //            db.Purchases.Add(O);
+        //            db.SaveChanges();
+        //            status = true;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        status = false;
+        //    }
+        //    return new JsonResult { Data = new { status = status } };
+        //}
+
+        //[HttpPost]
+        //public JsonResult SavePurchase(Purchase O)
+        //{
+        //    bool status = false;
+        //    if (ModelState.IsValid)
+        //    {
+        //        using (db)
+        //        {
+        //            db.Purchases.Add(O);
+        //            db.SaveChanges();
+        //            status = true;  
+        //        }
+
+        //        using (ApplicationDbContext db = new ApplicationDbContext())
+        //        {
+        //            Purchase order = new Purchase { InvoiceNo = O.InvoiceNo, PurchaseDate = O.PurchaseDate, 
+        //                SupplierId = O.SupplierId, Remarks = O.Remarks };
+
+        //            foreach (var i in db.PurchaseDetails)
+        //            {
+        //                //
+        //                // i.TotalAmount = 
+        //                order.PurchaseDetails.Add(i);
+        //                //order.OrderDetails.Add(i);
+        //            }
+        //            db.Purchases.Add(order);
+        //            //dc.Order.Add(objOrder);
+        //            db.SaveChanges();
+        //            status = true;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        status = false;
+        //    }
+        //    return new JsonResult { Data = new { status = status } };
+        //}
     }
 }

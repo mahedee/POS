@@ -20,29 +20,23 @@ namespace POS.Models
         [StringLength(150)]
         public string Name { get; set; }
 
-        [RegularExpression(@"^([A-Z a-z 0-9]+)*$", ErrorMessage = "Only characters & Numbers are allowed!")]
-        [Display(Name = "Barcode")]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(15)]
-        public string BarCode { get; set; }
-
         [Display(Name = "Category")]
-        public int CategoryId { get; set; }
+        public Nullable<int> CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public virtual Category Category { get; set; }
 
         [Display(Name = "Shop")]
-        public int ShopId { get; set; }
+        public Nullable<int> ShopId { get; set; }
         [ForeignKey("ShopId")]
         public virtual Shop Shop { get; set; }
 
         [Display(Name = "Brand")]
-        public int BrandId { get; set; }
+        public Nullable<int> BrandId { get; set; }
         [ForeignKey("BrandId")]
         public virtual Brand Brand { get; set; }
 
         [Display(Name = "Measurement")]
-        public int MeasurementId { get; set; }
+        public Nullable<int> MeasurementId { get; set; }
         [ForeignKey("MeasurementId")]
         public virtual Measurement Measurement { get; set; }
 
@@ -56,6 +50,8 @@ namespace POS.Models
                        ApplyFormatInEditMode = true)]
         [Display(Name = "Create/Modification Date")]
         public DateTime ModifiedDate { get; set; }
+
+        //public virtual ICollection<PurchaseDetail> PurchaseDetails { get; set; }
 
     }
 }
