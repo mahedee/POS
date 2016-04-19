@@ -12,7 +12,7 @@ namespace POS.Controllers
     {
         ApplicationDbContext db = new ApplicationDbContext();
         // GET: Purchase
-        public ActionResult Index()
+        public ActionResult Index(int ProductId = 0)
         {
             var customerList = db.Customers.ToList();
             ViewBag.Customers = customerList;
@@ -20,6 +20,25 @@ namespace POS.Controllers
             var productList = db.Products.ToList();
             ViewBag.Products = productList;
             return View();
+
+
+            //var model = new ViewProduct
+            //{
+            //    Products = db.Products.ToList(),
+            //    Stock = ProductId != 0 ? db.Products.Where(x => x.ProductId == ProductId).FirstOrDefault().Stock : null
+            //};
+            //return View(model);
+        }
+        [HttpGet]
+        public JsonResult GetProductInfo(int id)
+        {
+            string[] pp = new string[3];
+            var product = db.Products.Where(x => x.ProductId == id).FirstOrDefault();
+            var pur=db.PurchaseDetails.Where(x=> x.ProductId==id).OrderByDescending(x=> x.PurchaseDetailId).FirstOrDefault();
+            pp[0] = product.Stock.ToString();
+            pp[1] = pur.BarCode.ToString();
+            pp[2] = pur.SRate.ToString();
+            return Json(pp, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
@@ -63,18 +82,5 @@ namespace POS.Controllers
             }
             return new JsonResult { Data = new { status = status } };
         }
-
-
-        [HttpPost]
-        //public JsonResult GetProductData(string productID)
-        //{
-        //    Product product = Product.GetProduct(Convert.ToInt32(productID));
-        //    if (product != null)
-        //    {
-        //        return Json(new { success = true, productName = product.Name });
-        //    }
-        //    return Json(new { success = false });
-
-        //}
 	}
 }

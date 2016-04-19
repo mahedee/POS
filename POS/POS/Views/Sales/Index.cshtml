@@ -67,18 +67,49 @@
                     <td>
                         <label>Discount(%)</label>
                     </td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>
-                        @Html.DropDownList("Products", new SelectList(productList, "ProductId", "Name"), "-- Select Product --", new { @class = "form-control purchaseinput" })
+                        @Html.DropDownList("Products", new SelectList(productList, "ProductId", "Name"), "-- Select Product --", new { @class = "form-control" })
                         <span class="error">Item name required</span>
+                        <script>
+                            $("#Products").change(function () {
+                                $.ajax({
+                                    url: 'Sales/GetProductInfo',
+                                    type: 'GET',
+                                    data: 'id= '+$("#Products").val(),
+                                    success: function (data) {
+                                        $("#Stock").val(data[0]);
+                                        $("#Barcode").val(data[1]);
+                                        $("#SRate").val(data[2]);
+                                    },
+                                    error: function (err) {
+                                        alert('Error on Loading..');
+                                    }
+                                });
+                            });
+                            $(document).ready(function () {
+                                $("#Quantity").change(function () {
+                                    var qty = $("#Quantity").val();
+                                    var sto = $("#Stock").val();
+                                    if(parseInt(qty) > parseInt(sto))
+                                    {
+                                       alert('Quantity should not greater than stock')
+                                       $("#Quantity").val('').focus();
+                                       $("#Quantity").focus();
+                                    }
+                                });
+                            });
+                        </script>
                     </td>
                     <td>
                         <input type="text" id="Barcode" class="form-control purchaseinput" />
                         <span class="error">Barcode is required</span>
                     </td>
                     <td>
-                        @Html.DropDownListFor(model => item.Data.CategoryID, new SelectList((IEnumerable)ViewData["categories"], "CategoryID", "CategoryName", item.Data.CategoryID), "-Select Category-", new { @id = "category" + i })
+                        <input type="text" id="Stock" class="form-control purchaseinput" />
+                        <span class="error">Barcode is required</span>
                     </td>
                     <td>
                         <input type="text" id="Quantity" class="form-control purchaseinput" />
@@ -410,29 +441,3 @@
         font-size: 12px !important;
     }
 </style>
-
-<p>==========================================================================================</p>
-
-
-@*<script type="text/javascript">
-    $(document).ready(function () {
-        $("#Products").change(function () {
-            var selectedProductID = { productID: $("#Products").val() };
-            $.ajax({
-                url: '@Url.Action("GetProductData", "Sales")',
-                type: 'Post',
-                contentType: 'application/json',
-                dataType: 'json',
-                data: JSON.stringify(selectedProductID),
-                success: function (data) {
-                    if (data.success) {
-                        document.getElementById("Name").value = data.ProductName;
-                    }
-                    else {
-                        alert('invalid ID' + data.success);
-                    }
-                }
-            });
-        });
-    });
-</script>*@

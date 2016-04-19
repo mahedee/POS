@@ -53,10 +53,5 @@ namespace POS.Models
 
         //public virtual ICollection<PurchaseDetail> PurchaseDetails { get; set; }
 
-
-        internal static Product GetProduct(int p)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
