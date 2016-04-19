@@ -11,7 +11,7 @@ namespace POS.Models
     public class Product : CommonProperties
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int ProductId { get; set; }
 
         [RegularExpression(@"^([A-Z a-z ]+)*$", ErrorMessage = "Only characters are allowed!")]
         [Required(ErrorMessage = "Product Name is Required")]
@@ -21,28 +21,28 @@ namespace POS.Models
         public string Name { get; set; }
 
         [Display(Name = "Category")]
-        public Nullable<int> CategoryId { get; set; }
+        public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public virtual Category Category { get; set; }
 
         [Display(Name = "Shop")]
-        public Nullable<int> ShopId { get; set; }
+        public int ShopId { get; set; }
         [ForeignKey("ShopId")]
         public virtual Shop Shop { get; set; }
 
         [Display(Name = "Brand")]
-        public Nullable<int> BrandId { get; set; }
+        public int BrandId { get; set; }
         [ForeignKey("BrandId")]
         public virtual Brand Brand { get; set; }
 
         [Display(Name = "Measurement")]
-        public Nullable<int> MeasurementId { get; set; }
+        public int MeasurementId { get; set; }
         [ForeignKey("MeasurementId")]
         public virtual Measurement Measurement { get; set; }
 
         [RegularExpression(@"^([0-9 ]+)*$", ErrorMessage = "Only numbers are allowed!")]
         [Display(Name = "Stock")]
-        public float Stock { get; set; }
+        public double Stock { get; set; }
 
         [Required(ErrorMessage = "Create/Modification Date is required.")]
         [DataType(DataType.Date)]
@@ -53,5 +53,10 @@ namespace POS.Models
 
         //public virtual ICollection<PurchaseDetail> PurchaseDetails { get; set; }
 
+
+        internal static Product GetProduct(int p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -168,30 +168,27 @@
     <Compile Include="Controllers\MeasurementController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\PurchaseController.cs" />
+    <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="Controllers\ShopController.cs" />
     <Compile Include="Controllers\SupplierController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604101436147_InitialCreate.cs" />
-    <Compile Include="Migrations\201604101436147_InitialCreate.Designer.cs">
-      <DependentUpon>201604101436147_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201604180927155_first.cs" />
+    <Compile Include="Migrations\201604180927155_first.Designer.cs">
+      <DependentUpon>201604180927155_first.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604101439553_firstMigration.cs" />
-    <Compile Include="Migrations\201604101439553_firstMigration.Designer.cs">
-      <DependentUpon>201604101439553_firstMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201604180938153_second.cs" />
+    <Compile Include="Migrations\201604180938153_second.Designer.cs">
+      <DependentUpon>201604180938153_second.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604110739210_secondMigration.cs" />
-    <Compile Include="Migrations\201604110739210_secondMigration.Designer.cs">
-      <DependentUpon>201604110739210_secondMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201604181004060_third.cs" />
+    <Compile Include="Migrations\201604181004060_third.Designer.cs">
+      <DependentUpon>201604181004060_third.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604130657252_thirdMigration.cs" />
-    <Compile Include="Migrations\201604130657252_thirdMigration.Designer.cs">
-      <DependentUpon>201604130657252_thirdMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604131524375_fourthMigration.cs" />
-    <Compile Include="Migrations\201604131524375_fourthMigration.Designer.cs">
-      <DependentUpon>201604131524375_fourthMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201604190536377_123.cs" />
+    <Compile Include="Migrations\201604190536377_123.Designer.cs">
+      <DependentUpon>201604190536377_123.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -314,6 +311,7 @@
     <Content Include="Views\Customer\Details.cshtml" />
     <Content Include="Views\Customer\Edit.cshtml" />
     <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Sales\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -326,20 +324,17 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604101436147_InitialCreate.resx">
-      <DependentUpon>201604101436147_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604180927155_first.resx">
+      <DependentUpon>201604180927155_first.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604101439553_firstMigration.resx">
-      <DependentUpon>201604101439553_firstMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604180938153_second.resx">
+      <DependentUpon>201604180938153_second.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604110739210_secondMigration.resx">
-      <DependentUpon>201604110739210_secondMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604181004060_third.resx">
+      <DependentUpon>201604181004060_third.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604130657252_thirdMigration.resx">
-      <DependentUpon>201604130657252_thirdMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604131524375_fourthMigration.resx">
-      <DependentUpon>201604131524375_fourthMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604190536377_123.resx">
+      <DependentUpon>201604190536377_123.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

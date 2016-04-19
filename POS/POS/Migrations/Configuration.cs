@@ -10,7 +10,6 @@ namespace POS.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "POS.Models.ApplicationDbContext";
         }
 
         protected override void Seed(POS.Models.ApplicationDbContext context)

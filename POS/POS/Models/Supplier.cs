@@ -11,7 +11,7 @@ namespace POS.Models
     public class Supplier : CommonProperties
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int SupplierId { get; set; }
 
         [RegularExpression(@"^([A-Z a-z ]+)*$", ErrorMessage = "Only characters are allowed!")]
         [Required(ErrorMessage = "Supplier name is required")]
