@@ -50,7 +50,11 @@ textarea {
 }*/
 
 .purchaseinput{
-    width:150px;
+    /*width:100px;*/
+}
+
+.purchaseproduct{
+    width:225px;
 }
 
 .purchaserow{

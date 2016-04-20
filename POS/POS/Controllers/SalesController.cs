@@ -20,21 +20,14 @@ namespace POS.Controllers
             var productList = db.Products.ToList();
             ViewBag.Products = productList;
             return View();
-
-
-            //var model = new ViewProduct
-            //{
-            //    Products = db.Products.ToList(),
-            //    Stock = ProductId != 0 ? db.Products.Where(x => x.ProductId == ProductId).FirstOrDefault().Stock : null
-            //};
-            //return View(model);
         }
+        
         [HttpGet]
         public JsonResult GetProductInfo(int id)
         {
             string[] pp = new string[3];
             var product = db.Products.Where(x => x.ProductId == id).FirstOrDefault();
-            var pur=db.PurchaseDetails.Where(x=> x.ProductId==id).OrderByDescending(x=> x.PurchaseDetailId).FirstOrDefault();
+            var pur = db.PurchaseDetails.Where(x => x.ProductId == id).OrderByDescending(x => x.PurchaseDetailId).FirstOrDefault();
             pp[0] = product.Stock.ToString();
             pp[1] = pur.BarCode.ToString();
             pp[2] = pur.SRate.ToString();
@@ -48,12 +41,6 @@ namespace POS.Controllers
             bool status = false;
             if (ModelState.IsValid)
             {
-                //string currentUser = User.Identity.GetUserId();
-
-                //objPurchase.CreatedBy = currentUser;
-                //objPurchase.CreatedAt = DateTime.Now;
-                //objPurchase.UpdatedAt = DateTime.Now;
-
                 List<Product> productList = new List<Product>();
 
                 using (ApplicationDbContext dc = new ApplicationDbContext())
@@ -64,7 +51,6 @@ namespace POS.Controllers
                         product.Stock = product.Stock - p.Quantity;
 
                         productList.Add(product);
-                        
                     }
                     dc.Saleses.Add(objSales);
                     foreach (var p in productList)

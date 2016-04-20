@@ -7,7 +7,7 @@
 
 
 <div class="container panel panel-default">
-    <div class="panel-heading">Sales Information</div>
+    <div class="panel-heading"><h2>Sales Information</h2></div>
         <div class="panel-body">
             <table width="100%">
                 <tr>
@@ -71,14 +71,19 @@
                 </tr>
                 <tr>
                     <td>
-                        @Html.DropDownList("Products", new SelectList(productList, "ProductId", "Name"), "-- Select Product --", new { @class = "form-control" })
+                        @Html.DropDownList("Products", new SelectList(productList, "ProductId", "Name"), "-- Select Product --", new { @class = "form-control purchaseproduct" })
                         <span class="error">Item name required</span>
+                    </td>
+                    <td>
+                        <input type="text" id="Barcode" class=" form-control purchaseinput" />
+                        <span class="error">Barcode is required</span>
+
                         <script>
                             $("#Products").change(function () {
                                 $.ajax({
                                     url: 'Sales/GetProductInfo',
                                     type: 'GET',
-                                    data: 'id= '+$("#Products").val(),
+                                    data: 'id= ' + $("#Products").val(),
                                     success: function (data) {
                                         $("#Stock").val(data[0]);
                                         $("#Barcode").val(data[1]);
@@ -93,19 +98,17 @@
                                 $("#Quantity").change(function () {
                                     var qty = $("#Quantity").val();
                                     var sto = $("#Stock").val();
-                                    if(parseInt(qty) > parseInt(sto))
-                                    {
-                                       alert('Quantity should not greater than stock')
-                                       $("#Quantity").val('').focus();
-                                       $("#Quantity").focus();
+                                    if (parseInt(qty) > parseInt(sto)) {
+                                        alert('Quantity should not greater than stock')
+                                        $("#Quantity").val('').focus();
+                                        $("#Quantity").focus();
                                     }
                                 });
                             });
                         </script>
-                    </td>
-                    <td>
-                        <input type="text" id="Barcode" class="form-control purchaseinput" />
-                        <span class="error">Barcode is required</span>
+
+
+
                     </td>
                     <td>
                         <input type="text" id="Stock" class="form-control purchaseinput" />
@@ -128,7 +131,7 @@
                         <span class="error">Line Discount required</span>
                     </td>
                     <td>
-                        <input type="button" id="add" value="Add Record" class="btn btn-default" />
+                        <input type="button" id="add" value="Add Record" class="btn btn-danger" />
                     </td>
                 </tr>
             </table>
@@ -139,7 +142,7 @@
             </div>
 
             <div style="padding:10px 0px; text-align:right">
-                <input id="submit" type="button" value="Save" style="padding:10px 20px" />
+                <input id="submit" type="button" value="Save" class="btn btn-success" style="padding:10px 20px" />
             </div>
         </div>
 </div>
@@ -350,12 +353,12 @@
             //function for show added items in table
             function GeneratedItemsTable() {
                 if (SalesItems.length > 0) {
-                    var $table = $('<table class="table table-striped table-hover" width="100%"/>');
-                    $table.append('<thead><tr><th>Product</th><th>Barcode</th><th>Quantity</th><th>Sales Rate</th><th>Sub Total</th><th>Vat(%)</th><th>Vat(Amount)</th><th>Discount(%)</th><th>Discount(Amount)</th><th>Total</th></tr></thead>');
+                    var $table = $('<table class="table table-striped table-hover " width="100%"/>');
+                    $table.append('<thead><tr class="success"><th>Product</th><th>Barcode</th><th>Quantity</th><th>Sales Rate</th><th>Sub Total</th><th>Vat(%)</th><th>Vat(Amount)</th><th>Discount(%)</th><th>Discount(Amount)</th><th>Total</th></tr></thead>');
 
                     var $tbody = $('<tbody/>');
                     $.each(SalesItems, function (i, val) {
-                        var $row = $('<tr/>');
+                        var $row = $('<tr class="active"/>');
                         $row.append($('<td/>').html(val.ProductName));
                         $row.append($('<td/>').html(val.Barcode));
                         $row.append($('<td/>').html(val.Quantity));

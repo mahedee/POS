@@ -42,7 +42,7 @@
             </tr>
         </table>
         <hr />
-        <table>
+        <table width="100%">
             <tr>
                 <td>
                     <label>Product Name</label>
@@ -68,7 +68,7 @@
             </tr>
             <tr>
                 <td>
-                    @Html.DropDownList("Products", new SelectList(productList, "ProductId", "Name"), "-- Select Product --", new { @class = "form-control purchaseinput" })
+                    @Html.DropDownList("Products", new SelectList(productList, "ProductId", "Name"), "-- Select Product --", new { @class = "form-control purchaseproduct" })
                     <span class="error">Item name required</span>
                 </td>
                 @*<td>
