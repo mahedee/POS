@@ -53,7 +53,7 @@ namespace POS.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,BarCode,CategoryId,ShopId,BrandId,MeasurementId,Stock,ModifiedDate", Exclude = "CreatedBy,CreatedAt,UpdatedAt")] Product product)
+        public ActionResult Create([Bind(Include = "ProductId,Name,BarCode,CategoryId,ShopId,BrandId,MeasurementId,Stock,ModifiedDate", Exclude = "CreatedBy,CreatedAt,UpdatedAt")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -102,7 +102,7 @@ namespace POS.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,BarCode,CategoryId,ShopId,BrandId,MeasurementId,Stock,ModifiedDate", Exclude = "CreatedBy,CreatedAt,UpdatedAt")] Product product)
+        public ActionResult Edit([Bind(Include = "ProductId,Name,BarCode,CategoryId,ShopId,BrandId,MeasurementId,Stock,ModifiedDate", Exclude = "CreatedBy,CreatedAt,UpdatedAt")] Product product)
         {
             product.CreatedBy = (string)Session["CreatedBy"];
             Session.Remove("CreatedBy");

@@ -47,9 +47,9 @@
                 <td>
                     <label>Product Name</label>
                 </td>
-                <td>
+                @*<td>
                     <label>Barcode</label>
-                </td>
+                </td>*@
                 <td>
                     <label>Quantity</label>
                 </td>
@@ -71,10 +71,10 @@
                     @Html.DropDownList("Products", new SelectList(productList, "ProductId", "Name"), "-- Select Product --", new { @class = "form-control purchaseinput" })
                     <span class="error">Item name required</span>
                 </td>
-                <td>
+                @*<td>
                     <input type="text" id="Barcode" class="form-control purchaseinput" />
                     <span class="error">Barcode is required</span>
-                </td>
+                </td>*@
                 <td>
                     <input type="text" id="Quantity" class="form-control purchaseinput" />
                     <span class="error">Valid quantity required</span>
@@ -141,13 +141,13 @@
                     $('#Products').siblings('span.error').css('visibility', 'hidden');
                 }
 
-                if (!($('#Barcode').val().trim() != '' && !isNaN($('#Barcode').val().trim()))) {
-                    isValidItem = false;
-                    $('#Barcode').siblings('span.error').css('visibility', 'visible');
-                }
-                else {
-                    $('#Barcode').siblings('span.error').css('visibility', 'hidden');
-                }
+                //if (!($('#Barcode').val().trim() != '' && !isNaN($('#Barcode').val().trim()))) {
+                //    isValidItem = false;
+                //    $('#Barcode').siblings('span.error').css('visibility', 'visible');
+                //}
+                //else {
+                //    $('#Barcode').siblings('span.error').css('visibility', 'hidden');
+                //}
 
                 if (!($('#Quantity').val().trim() != '' && !isNaN($('#Quantity').val().trim()))) {
                     isValidItem = false;
@@ -194,7 +194,7 @@
                     PurchaseItems.push({
                         ProductName: $("#Products option:selected").text(),
                         ProductId: $("#Products option:selected").val(),
-                        Barcode: $('#Barcode').val().trim(),
+                        //Barcode: $('#Barcode').val().trim(),
                         Quantity: parseInt($('#Quantity').val().trim()),
                         PRate: parseFloat($('#PRate').val().trim()),
                         SRate: parseFloat($('#SRate').val().trim()),
@@ -219,7 +219,7 @@
 
                     //Clear fields
                     $('#Products').val('').focus();
-                    $('#Barcode,#Quantity,#PRate,#SRate,#Vat,#Discount').val('');
+                    $('#Quantity,#PRate,#SRate,#Vat,#Discount').val('');
 
                 }
                 //populate order items
@@ -326,7 +326,7 @@
                     $.each(PurchaseItems, function (i, val) {
                         var $row = $('<tr/>');
                         $row.append($('<td/>').html(val.ProductName));
-                        $row.append($('<td/>').html(val.Barcode));
+                        //$row.append($('<td/>').html(val.Barcode));
                         $row.append($('<td/>').html(val.Quantity));
                         $row.append($('<td/>').html(val.PRate));
                         $row.append($('<td/>').html(val.SRate));

@@ -190,8 +190,14 @@
     <Compile Include="Migrations\201604190536377_123.Designer.cs">
       <DependentUpon>201604190536377_123.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604200442135_fourth.cs" />
+    <Compile Include="Migrations\201604200442135_fourth.Designer.cs">
+      <DependentUpon>201604200442135_fourth.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BarCode39.cs" />
+    <Compile Include="Models\barcodecs.cs" />
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\CommonProperties.cs" />
@@ -225,6 +231,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\free3of9.ttf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -337,6 +344,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604190536377_123.resx">
       <DependentUpon>201604190536377_123.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604200442135_fourth.resx">
+      <DependentUpon>201604200442135_fourth.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
