@@ -21,16 +21,16 @@ namespace POS.Controllers
             ViewBag.Products = productList;
             return View();
         }
-        
+
         [HttpGet]
         public JsonResult GetProductInfo(int id)
         {
             string[] pp = new string[3];
-            var product = db.Products.Where(x => x.ProductId == id).FirstOrDefault();
-            var pur = db.PurchaseDetails.Where(x => x.ProductId == id).OrderByDescending(x => x.PurchaseDetailId).FirstOrDefault();
-            pp[0] = product.Stock.ToString();
-            pp[1] = pur.BarCode.ToString();
-            pp[2] = pur.SRate.ToString();
+            var purchase = db.PurchaseDetails.Where(x => x.BarCode == id).FirstOrDefault();
+
+            pp[0] = purchase.ProductId.ToString();
+            pp[1] = purchase.StockQuantity.ToString();
+            pp[2] = purchase.SRate.ToString();
             return Json(pp, JsonRequestBehavior.AllowGet);
         }
 
@@ -42,18 +42,28 @@ namespace POS.Controllers
             if (ModelState.IsValid)
             {
                 List<Product> productList = new List<Product>();
+                List<PurchaseDetail> purchaseDetailsList = new List<PurchaseDetail>();
 
                 using (ApplicationDbContext dc = new ApplicationDbContext())
                 {
                     foreach (SalesDetail p in objSales.SalesDetailses)
                     {
+                        PurchaseDetail purchaseDetail = dc.PurchaseDetails.Where(x => x.BarCode == p.BarCode).FirstOrDefault();
+                        purchaseDetail.StockQuantity = purchaseDetail.StockQuantity - p.Quantity;
+
                         Product product = dc.Products.Where(x => x.ProductId == p.ProductId).FirstOrDefault();
                         product.Stock = product.Stock - p.Quantity;
 
                         productList.Add(product);
+                        purchaseDetailsList.Add(purchaseDetail);
                     }
                     dc.Saleses.Add(objSales);
                     foreach (var p in productList)
+                    {
+                        dc.Entry(p).State = EntityState.Modified;
+                    }
+
+                    foreach (var p in purchaseDetailsList)
                     {
                         dc.Entry(p).State = EntityState.Modified;
                     }
@@ -70,3 +80,40 @@ namespace POS.Controllers
         }
 	}
 }
+
+
+
+//[HttpPost]
+//        public JsonResult SaveSales(Sales objSales)
+//        {
+
+//            bool status = false;
+//            if (ModelState.IsValid)
+//            {
+//                List<Product> productList = new List<Product>();
+
+//                using (ApplicationDbContext dc = new ApplicationDbContext())
+//                {
+//                    foreach (SalesDetail p in objSales.SalesDetailses)
+//                    {
+//                        Product product = dc.Products.Where(x => x.ProductId == p.ProductId).FirstOrDefault();
+//                        product.Stock = product.Stock - p.Quantity;
+
+//                        productList.Add(product);
+//                    }
+//                    dc.Saleses.Add(objSales);
+//                    foreach (var p in productList)
+//                    {
+//                        dc.Entry(p).State = EntityState.Modified;
+//                    }
+
+//                    dc.SaveChanges();
+//                    status = true;
+//                }
+//            }
+//            else
+//            {
+//                status = false;
+//            }
+//            return new JsonResult { Data = new { status = status } };
+//        }

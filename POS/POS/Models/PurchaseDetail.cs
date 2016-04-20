@@ -10,12 +10,12 @@ namespace POS.Models
     [Table("PurchaseDetails")]
     public class PurchaseDetail
     {
-        public PurchaseDetail()
-        {
-            barcodecs objBar = new barcodecs();
-            BarCode = objBar.generateBarcode();
-            BarcodeImage = objBar.getBarcodeImage(objBar.generateBarcode(), ProductName);
-        }
+        //public PurchaseDetail()
+        //{
+        //    barcodecs objBar = new barcodecs();
+        //    BarCode = objBar.generateBarcode();
+        //    BarcodeImage = objBar.getBarcodeImage(objBar.generateBarcode(), ProductName);
+        //}
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PurchaseDetailId { get; set; }
 
@@ -28,15 +28,12 @@ namespace POS.Models
 
         public string ProductName { get; set; }
 
-        [RegularExpression(@"^([A-Z a-z 0-9 -]+)*$", ErrorMessage = "Only characters & Numbers are allowed!")]
-        [Display(Name = "Barcode")]
-        [Column(TypeName = "VARCHAR")]
-        [StringLength(15)]
-        public string BarCode { get; set; }
-        public byte[] BarcodeImage { get; set; }
-        public string ImageUrl { get; set; }
+        public int BarCode { get; set; }
+        //public byte[] BarcodeImage { get; set; }
+        //public string ImageUrl { get; set; }
 
         public double Quantity { get; set; }
+        public double StockQuantity { get; set; }
         public double PRate { get; set; }
         public double SRate { get; set; }
         public double Vat { get; set; }

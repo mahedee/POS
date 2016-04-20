@@ -19,7 +19,7 @@ namespace POS.Models
 
         [Required(ErrorMessage = "Please choose a product")]
         public int ProductId { get; set; }
-        public string BarCode { get; set; }
+        public int BarCode { get; set; }
         public double Quantity { get; set; }
         public double SRate { get; set; }
         public double Vat { get; set; }

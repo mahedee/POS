@@ -47,10 +47,10 @@
             <table width="100%">
                 <tr>
                     <td>
-                        <label>Product Name</label>
+                        <label>Barcode</label>
                     </td>
                     <td>
-                        <label>Barcode</label>
+                        <label>Product Name</label>
                     </td>
                     <td>
                         <label>Stock</label>
@@ -71,22 +71,18 @@
                 </tr>
                 <tr>
                     <td>
-                        @Html.DropDownList("Products", new SelectList(productList, "ProductId", "Name"), "-- Select Product --", new { @class = "form-control purchaseproduct" })
-                        <span class="error">Item name required</span>
-                    </td>
-                    <td>
                         <input type="text" id="Barcode" class=" form-control purchaseinput" />
                         <span class="error">Barcode is required</span>
 
                         <script>
-                            $("#Products").change(function () {
+                            $("#Barcode").change(function () {
                                 $.ajax({
                                     url: 'Sales/GetProductInfo',
                                     type: 'GET',
-                                    data: 'id= ' + $("#Products").val(),
+                                    data: 'id= ' + $("#Barcode").val(),
                                     success: function (data) {
-                                        $("#Stock").val(data[0]);
-                                        $("#Barcode").val(data[1]);
+                                        $("#Products").val(data[0]);
+                                        $("#Stock").val(data[1]);
                                         $("#SRate").val(data[2]);
                                     },
                                     error: function (err) {
@@ -95,7 +91,7 @@
                                 });
                             });
                             $(document).ready(function () {
-                                $("#Quantity").change(function () {
+                                $("#Quantity").change('input', function () {
                                     var qty = $("#Quantity").val();
                                     var sto = $("#Stock").val();
                                     if (parseInt(qty) > parseInt(sto)) {
@@ -106,12 +102,13 @@
                                 });
                             });
                         </script>
-
-
-
                     </td>
                     <td>
-                        <input type="text" id="Stock" class="form-control purchaseinput" />
+                        @Html.DropDownList("Products", new SelectList(productList, "ProductId", "Name"), "  ", new { @class = "form-control purchaseproduct", @disabled = "disabled" })
+                        <span class="error">Item name required</span>
+                    </td>
+                    <td>
+                        <input type="text" id="Stock" class="form-control purchaseinput" disabled="true" />
                         <span class="error">Barcode is required</span>
                     </td>
                     <td>
@@ -119,7 +116,7 @@
                         <span class="error">Valid quantity required</span>
                     </td>
                     <td>
-                        <input type="text" id="SRate" class="form-control purchaseinput" />
+                        <input type="text" id="SRate" class="form-control purchaseinput" disabled="true" />
                         <span class="error">Valid sales rate required</span>
                     </td>
                     <td>
@@ -246,7 +243,7 @@
 
                     //Clear fields
                     $('#Products').val('').focus();
-                    $('#Barcode,#Quantity,#SRate,#Vat,#LineDiscount').val('');
+                    $('#Barcode,#Stock,#Quantity,#SRate,#Vat,#LineDiscount').val('');
 
                 }
                 //populate order items
