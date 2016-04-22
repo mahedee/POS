@@ -28,11 +28,43 @@ namespace POS.Controllers
             string[] pp = new string[3];
             var purchase = db.PurchaseDetails.Where(x => x.BarCode == id).FirstOrDefault();
 
-            pp[0] = purchase.ProductId.ToString();
-            pp[1] = purchase.StockQuantity.ToString();
-            pp[2] = purchase.SRate.ToString();
+            if (purchase != null)
+            {
+                pp[0] = purchase.ProductId.ToString();
+                pp[1] = purchase.Quantity.ToString();
+                pp[2] = purchase.SRate.ToString();
+            }
+            
             return Json(pp, JsonRequestBehavior.AllowGet);
         }
+
+        [HttpGet]
+        public JsonResult AutoCompleteCountry(string term)
+        {
+
+            ApplicationDbContext db = new ApplicationDbContext();
+            List<String> result = new List<String>();
+            result = db.PurchaseDetails.Where(x => x.BarCode.ToString().StartsWith(term)).Select(y => y.BarCode.ToString()).ToList();
+            
+            //var result = db.PurchaseDetails.Where(s => term == null || s.BarCode.ToString().ToLower().Contains(term.ToLower())).Select(x => new { id = x.BarCode, value = x.BarCode }).Take(5).ToList();
+            
+            //List<string> result = db.PurchaseDetails.Where(x => x.BarCode.ToString().StartsWith(term)).Select(c => c.BarCode.ToString()).ToList();
+
+            //var result = (from r in db.PurchaseDetails
+            //              where r.BarCode.ToString().ToLower().Contains(term.ToLower())
+            //              select new { r.BarCode }).Distinct();
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+
+        //[HttpPost]
+        //public JsonResult AutoCompleteCountry(string term)
+        //{
+        //    var result = (from r in db.Products
+        //                  where r.Name.ToLower().Contains(term.ToLower())
+        //                  select new { r.Name }).Distinct();
+        //    return Json(result, JsonRequestBehavior.AllowGet);
+        //}
 
         [HttpPost]
         public JsonResult SaveSales(Sales objSales)

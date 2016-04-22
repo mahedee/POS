@@ -3,10 +3,11 @@
 
     var supplierList = ViewBag.Suppliers;
     var productList = ViewBag.Products;
+    var generatedBarcode = ViewBag.BarcodeGenerated;
 }
 
 <div class="container panel panel-default">
-    <div class="panel-heading"><h2>Purchase Information</h2></div>
+    <div class="panel-heading"><h2>Purchase Information @Html.Hidden("BarcodeGenerated", (string)ViewBag.generatedBarcode)</h2></div>
     <div class="panel-body">
         <table width="100%">
             <tr>
@@ -71,10 +72,6 @@
                     @Html.DropDownList("Products", new SelectList(productList, "ProductId", "Name"), "-- Select Product --", new { @class = "form-control purchaseproduct" })
                     <span class="error">Item name required</span>
                 </td>
-                @*<td>
-                    <input type="text" id="Barcode" class="form-control purchaseinput" />
-                    <span class="error">Barcode is required</span>
-                </td>*@
                 <td>
                     <input type="text" id="Quantity" class="form-control purchaseinput" />
                     <span class="error">Valid quantity required</span>
@@ -96,7 +93,7 @@
                     <span class="error">Discount required</span>
                 </td>
                 <td>
-                    <input type="button" id="add" value="Add Record" class="btn btn-default" />
+                    <input type="button" id="add" value="Add Record" class="btn btn-danger" />
                 </td>
             </tr>
         </table>
@@ -106,7 +103,7 @@
         </div>
 
         <div style="padding:10px 0px; text-align:right">
-            <input id="submit" type="button" value="Save" style="padding:10px 20px" />
+            <input id="submit" type="button" value="Save" class="btn btn-success" style="padding:10px 20px" />
         </div>
 
     </div>
@@ -127,8 +124,9 @@
             this.type = "text";
         });
 
+
         $(document).ready(function () {
-            var PurchaseItems = [];
+            PurchaseItems = [];
             //Add button click function
             $('#add').click(function () {
                 //Check validation of order item
@@ -194,7 +192,7 @@
                     PurchaseItems.push({
                         ProductName: $("#Products option:selected").text(),
                         ProductId: $("#Products option:selected").val(),
-                        //Barcode: $('#Barcode').val().trim(),
+                        Barcode: parseInt($('#BarcodeGenerated').val().trim()),
                         Quantity: parseInt($('#Quantity').val().trim()),
                         StockQuantity: parseInt($('#Quantity').val().trim()),
                         PRate: parseFloat($('#PRate').val().trim()),
@@ -320,14 +318,14 @@
             //function for show added items in table
             function GeneratedItemsTable() {
                 if (PurchaseItems.length > 0) {
-                    var $table = $('<table class="table table-striped table-hover" width="100%"/>');
-                    $table.append('<thead><tr><th>Product</th><th>Barcode</th><th>Quantity</th><th>Purchase Rate</th><th>Sales Rate</th><th>Sub Total</th><th>Vat(%)</th><th>Vat(Amount)</th><th>Discount(%)</th><th>Discount(Amount)</th><th>Total</th></tr></thead>');
+                    var $table = $('<table id="myTable" class="table table-striped table-hover" width="100%"/>');
+                    $table.append('<thead><tr class="success"><th>Product</th><th>Barcode</th><th>Quantity</th><th>Purchase Rate</th><th>Sales Rate</th><th>Sub Total</th><th>Vat(%)</th><th>Vat(Amount)</th><th>Discount(%)</th><th>Discount(Amount)</th><th>Total</th><th>Action</th><th></th></tr></thead>');
 
                     var $tbody = $('<tbody/>');
                     $.each(PurchaseItems, function (i, val) {
-                        var $row = $('<tr/>');
+                        var $row = $('<tr class="active"/>');
                         $row.append($('<td/>').html(val.ProductName));
-                        //$row.append($('<td/>').html(val.Barcode));
+                        $row.append($('<td/>').html(val.Barcode));
                         $row.append($('<td/>').html(val.Quantity));
                         $row.append($('<td/>').html(val.PRate));
                         $row.append($('<td/>').html(val.SRate));
@@ -337,6 +335,9 @@
                         $row.append($('<td/>').html(val.Discount));
                         $row.append($('<td/>').html(val.DiscountAmount.toFixed(2)));
                         $row.append($('<td/>').html(val.Total.toFixed(2)));
+                        $row.append($('<td/>').html("<button type='button' class='btn btn-default'><span class='glyphicon glyphicon-pencil'></span></button>"));
+                        $row.append($('<td/>').html("<button type='button' class='btn btn-default' onclick='deleteRow(this.parentNode.parentNode.rowIndex)'><span class='glyphicon glyphicon-remove'></span></button>"));
+                       
                         $tbody.append($row);
                     });
 
@@ -346,9 +347,9 @@
                         TotalAmount = TotalAmount + val.Total;
                     });
 
-                    $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Total</label></th><th><input type="text" class="form-control" id="TotalAmount" onblur="doMath();" value="' + TotalAmount.toFixed(2) + '" readonly="true"/> </th></tr></thead>');
+                    $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Total</label></th><th><input type="text" class="form-control" id="TotalAmount" onblur="doMath();" value="' + TotalAmount.toFixed(2) + '" disabled="true"/> </th></tr></thead>');
                     $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Paid Amount</label></th><th><input type="text" class="form-control" id="PaidAmount" onblur="doMath();" /></th></tr></thead>');
-                    $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Due Amount</label></th><th><input type="text" class="form-control" id="DueAmount" readonly="true" /></th></tr></thead>');
+                    $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Due Amount</label></th><th><input type="text" class="form-control" id="DueAmount" disabled="true" /></th></tr></thead>');
 
                     $('#PurchaseItems').html($table);
                 }
@@ -366,11 +367,21 @@
         var DueAmount = TAmount - PaidAmount;
 
         document.getElementById('DueAmount').value = DueAmount.toFixed(2);
+    }
 
+    function deleteRow(i) {
+        document.getElementById('myTable').deleteRow(i);
+        var purchaseQuantity = PurchaseItems[0].Quantity;
+        var purchaseRate = PurchaseItems[0].PRate;
+        var multipliedRate = purchaseQuantity * purchaseRate;
+
+        $("#TotalAmount").val($("#TotalAmount").val() - multipliedRate);
+        PurchaseItems.pop();
+
+        //alert(i);
+        //PurchaseItems.removeNode(i, 1);
     }
 </script>
-
-
 
 <style>
     /*Adding some css for looks good*/
@@ -408,4 +419,5 @@
     .ui-widget {
         font-size: 12px !important;
     }
+
 </style>

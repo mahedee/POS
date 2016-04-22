@@ -10,12 +10,12 @@ namespace POS.Models
     [Table("PurchaseDetails")]
     public class PurchaseDetail
     {
-        //public PurchaseDetail()
-        //{
-        //    barcodecs objBar = new barcodecs();
-        //    BarCode = objBar.generateBarcode();
-        //    BarcodeImage = objBar.getBarcodeImage(objBar.generateBarcode(), ProductName);
-        //}
+        public PurchaseDetail()
+        {
+            barcodecs objBar = new barcodecs();
+            BarCode = Convert.ToInt32(objBar.generateBarcode());
+            BarcodeImage = objBar.getBarcodeImage(objBar.generateBarcode(), ProductName);
+        }
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PurchaseDetailId { get; set; }
 
@@ -29,8 +29,8 @@ namespace POS.Models
         public string ProductName { get; set; }
 
         public int BarCode { get; set; }
-        //public byte[] BarcodeImage { get; set; }
-        //public string ImageUrl { get; set; }
+        public byte[] BarcodeImage { get; set; }
+        public string ImageUrl { get; set; }
 
         public double Quantity { get; set; }
         public double StockQuantity { get; set; }

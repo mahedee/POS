@@ -74,34 +74,6 @@
                         <input type="text" id="Barcode" class=" form-control purchaseinput" />
                         <span class="error">Barcode is required</span>
 
-                        <script>
-                            $("#Barcode").change(function () {
-                                $.ajax({
-                                    url: 'Sales/GetProductInfo',
-                                    type: 'GET',
-                                    data: 'id= ' + $("#Barcode").val(),
-                                    success: function (data) {
-                                        $("#Products").val(data[0]);
-                                        $("#Stock").val(data[1]);
-                                        $("#SRate").val(data[2]);
-                                    },
-                                    error: function (err) {
-                                        alert('Error on Loading..');
-                                    }
-                                });
-                            });
-                            $(document).ready(function () {
-                                $("#Quantity").change('input', function () {
-                                    var qty = $("#Quantity").val();
-                                    var sto = $("#Stock").val();
-                                    if (parseInt(qty) > parseInt(sto)) {
-                                        alert('Quantity should not greater than stock')
-                                        $("#Quantity").val('').focus();
-                                        $("#Quantity").focus();
-                                    }
-                                });
-                            });
-                        </script>
                     </td>
                     <td>
                         @Html.DropDownList("Products", new SelectList(productList, "ProductId", "Name"), "  ", new { @class = "form-control purchaseproduct", @disabled = "disabled" })
@@ -152,13 +124,14 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script>
         //Date Picker
-    $(function () {
-        $('#SalesDate').datepicker({ dateFormat: 'dd MM yy', type:Text }).click(function () { $(this).focus(); });
-    });
 
-    $('input[type=date]').each(function () {
-        this.type = "text";
-    });
+        $(function () {
+            $('#SalesDate').datepicker({ dateFormat: 'dd MM yy', type: Text }).click(function () { $(this).focus(); });
+        });
+
+        $('input[type=date]').each(function () {
+            this.type = "text";
+        });
 
         $(document).ready(function () {
             var SalesItems = [];
@@ -375,10 +348,10 @@
                         TotalAmount = TotalAmount + val.Total;
                     });
 
-                    $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Total</label></th><th><input type="text" class="form-control" id="TotalAmount" onblur="doMath();" value="' + TotalAmount.toFixed(2) + '" readonly="true"/> </th></tr></thead>');
+                    $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Total</label></th><th><input type="text" class="form-control" id="TotalAmount" onblur="doMath();" value="' + TotalAmount.toFixed(2) + '" disabled="true"/> </th></tr></thead>');
                     $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Overall Discount(%)</label></th><th><input type="text" class="form-control" id="OverallDiscount" onblur="doMath();" /></th></tr></thead>');
-                    $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Overall Discount Amount</label></th><th><input type="text" class="form-control" id="OverallDiscountAmount" onblur="doMath();" readonly="true"/> </th></tr></thead>');
-                    $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Grand Total</label></th><th><input type="text" class="form-control" id="GrandTotal" readonly="true" /></th></tr></thead>');
+                    $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Overall Discount Amount</label></th><th><input type="text" class="form-control" id="OverallDiscountAmount" onblur="doMath();" disabled="true"/> </th></tr></thead>');
+                    $table.append('<thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th><label>Grand Total</label></th><th><input type="text" class="form-control" id="GrandTotal" disabled="true" /></th></tr></thead>');
 
                     $('#SalesItems').html($table);
                 }
@@ -400,7 +373,73 @@
         document.getElementById('OverallDiscountAmount').value = OverallDiscountAmount.toFixed(2);
         document.getElementById('GrandTotal').value = GrandTotal.toFixed(2);
     }
+
+    $(document).ready(function () {
+        $("#Barcode").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: "/Sales/AutoCompleteCountry",
+                    type: "GET",
+                    dataType: "json",
+                    data: { term: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return { label: item, value: item };
+                        }))
+                    }
+                })
+            },
+            messages: {
+                noResults: "", results: ""
+            }
+        });
+
+        function makeid() {
+            var text = "";
+            var possible = "0123456789";
+
+            for (var i = 0; i < 8; i++)
+
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+            return "INV-" + text.toUpperCase();
+        }
+
+        $('#SalesInvoiceNo').val(makeid());
+
+
+
+        $("#Barcode").change(function () {
+            $.ajax({
+                url: 'Sales/GetProductInfo',
+                type: 'GET',
+                data: 'id= ' + $("#Barcode").val(),
+                success: function (data) {
+                    $("#Products").val(data[0]);
+                    $("#Stock").val(data[1]);
+                    $("#SRate").val(data[2]);
+                },
+                error: function (err) {
+                    alert('Error on Loading..');
+                }
+            });
+        });
+
+        $("#Quantity").change('input', function () {
+            var qty = $("#Quantity").val();
+            var sto = $("#Stock").val();
+            if (parseInt(qty) > parseInt(sto)) {
+                alert('Quantity should not greater than stock')
+                $("#Quantity").val('').focus();
+                $("#Quantity").focus();
+            }
+        });
+
+    });
+
 </script>
+
+
 
 
 

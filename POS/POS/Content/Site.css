@@ -31,11 +31,12 @@ textarea {
     border-radius:5px;
 }
 
-/*.pos-name {
+.pos-name {
     font-size:80px;
-    font-family:'Comic Sans MS';
+    font-family:'Segoe UI';
     font-weight:bolder;
-    text-shadow: 0 1px 0 #ccc, 
+    color:#ffffff;
+    /*text-shadow: 0 1px 0 #ccc, 
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
                0 4px 0 #b9b9b9,
@@ -46,8 +47,8 @@ textarea {
                0 3px 5px rgba(0,0,0,.2),
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-}*/
+               0 20px 20px rgba(0,0,0,.15);*/
+}
 
 .purchaseinput{
     /*width:100px;*/
@@ -59,4 +60,9 @@ textarea {
 
 .purchaserow{
     width:25%;
+}
+
+.actionsize{
+    width:100px;
+    margin:10px;
 }

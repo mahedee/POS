@@ -7,16 +7,14 @@ namespace POS.Migrations
     {
         public override void Up()
         {
-            AddColumn("dbo.PurchaseDetails", "ProductName", c => c.String());
-            AddColumn("dbo.PurchaseDetails", "BarcodeImage", c => c.Binary());
-            AddColumn("dbo.PurchaseDetails", "ImageUrl", c => c.String());
+            AlterColumn("dbo.SalesDetail", "BarCode", c => c.String());
+            AlterColumn("dbo.PurchaseDetails", "BarCode", c => c.String());
         }
         
         public override void Down()
         {
-            DropColumn("dbo.PurchaseDetails", "ImageUrl");
-            DropColumn("dbo.PurchaseDetails", "BarcodeImage");
-            DropColumn("dbo.PurchaseDetails", "ProductName");
+            AlterColumn("dbo.PurchaseDetails", "BarCode", c => c.Int(nullable: false));
+            AlterColumn("dbo.SalesDetail", "BarCode", c => c.Int(nullable: false));
         }
     }
 }

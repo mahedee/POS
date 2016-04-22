@@ -18,6 +18,9 @@ namespace POS.Controllers
             var supplierList = db.Suppliers.ToList();
             ViewBag.Suppliers = supplierList;
 
+            PurchaseDetail objPurchaseDetail = new PurchaseDetail();
+            ViewBag.BarcodeGenerated = objPurchaseDetail.BarCode;
+
             var productList = db.Products.ToList();
             ViewBag.Products = productList;
             return View();
@@ -30,11 +33,11 @@ namespace POS.Controllers
             bool status = false;
             if (ModelState.IsValid)
             {
-                //string currentUser = User.Identity.GetUserId();
+                string currentUser = User.Identity.GetUserId();
 
-                //objPurchase.CreatedBy = currentUser;
-                //objPurchase.CreatedAt = DateTime.Now;
-                //objPurchase.UpdatedAt = DateTime.Now;
+                objPurchase.CreatedBy = currentUser;
+                objPurchase.CreatedAt = DateTime.Now;
+                objPurchase.UpdatedAt = DateTime.Now;
                 List<Product> productList = new List<Product>();
                 using (ApplicationDbContext dc = new ApplicationDbContext())
                 {
@@ -45,6 +48,8 @@ namespace POS.Controllers
            
                         productList.Add(product);
                     }
+
+
                     dc.Purchases.Add(objPurchase);
                     foreach (var p in productList)
                     {

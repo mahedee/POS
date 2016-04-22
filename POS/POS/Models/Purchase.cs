@@ -8,7 +8,7 @@ using System.Web;
 namespace POS.Models
 {
     [Table("Purchase")]
-    public class Purchase
+    public class Purchase : CommonProperties
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PurchaseId { get; set; }
