@@ -328,3 +328,4 @@ D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\obj\Debug\QuickBoo
 D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\obj\Debug\QuickBook.csproj.GenerateResource.Cache
 D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\obj\Debug\QuickBook.Migrations.modifytest.resources
 D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\obj\Debug\QuickBook.Migrations.modifyadd_com.resources
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\obj\Debug\QuickBook.Migrations.modifyadd_item.resources

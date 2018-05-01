@@ -31,5 +31,7 @@ namespace QuickBook.Models
         }
 
         public System.Data.Entity.DbSet<QuickBook.Models.CompanyInfo> CompanyInfoes { get; set; }
+
+        public System.Data.Entity.DbSet<QuickBook.Models.ItemMaster> ItemMasters { get; set; }
     }
 }
