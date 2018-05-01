@@ -1,0 +1,55 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+        <br />
+        <div class="dropdown">
+            <span>
+                @Html.ActionLink("Hello " + User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+            </span>
+        </div>
+           
+            <div class="dropdown">
+                <span>
+                    <a href="/Home/Contact">
+                        <img src="/Content/Images/notify-9.png" height="30" alt="Notification logo" />
+                    </a>
+                </span>
+                <div class="dropdown-content-single">
+                    <a href="/Home/Contact">You have 3 new Notification</a>
+                </div>
+            </div>
+
+            <div class="dropdown-list">
+                <span>
+                    <a href="#">
+                        <img src="/Content/Images/profile-5.png" height="30" alt="Profile logo" />
+                    </a>
+                </span>
+                <div class="dropdown-content">
+                    <a href="/Home/About">User Profile </a>
+                    <a href="/Manage/ChangePassword">Change Password</a>
+                    @*@Html.ActionLink("Change Password", "ChangePassword", "Manage") @*Correct Codding*@
+                    <a href="/Home/Contact">Notification Details</a>
+                </div>
+            </div>
+
+            <div class="nav navbar-nav-logout">
+                <span>
+                    <a href="javascript:document.getElementById('logoutForm').submit()">
+                        <img src="/Content/Images/logout-3.png" height="30" alt="Logout logo" />
+                        logout
+                    </a>
+                </span>
+            </div>
+            }
+            }
+            else
+            {
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+            </ul>
+            }

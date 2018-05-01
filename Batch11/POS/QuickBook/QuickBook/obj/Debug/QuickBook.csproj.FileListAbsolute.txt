@@ -1,0 +1,330 @@
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\ApplicationInsights.config
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\csc.exe
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\System.Collections.Immutable.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\System.Reflection.Metadata.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\vbc.exe
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\VBCSCompiler.exe
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\roslyn\VBCSCompiler.exe.config
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\QuickBook.dll.config
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\QuickBook.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\QuickBook.pdb
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Antlr3.Runtime.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\EntityFramework.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\EntityFramework.SqlServer.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AI.DependencyCollector.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AI.Web.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AI.WindowsServer.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.ApplicationInsights.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Google.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Web.Infrastructure.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Newtonsoft.Json.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Owin.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.Helpers.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.Mvc.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.Optimization.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.Razor.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Deployment.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.WebPages.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Razor.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\WebGrease.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AI.DependencyCollector.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AI.Web.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AI.WindowsServer.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.ApplicationInsights.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.Helpers.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.Mvc.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.Optimization.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.Razor.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.WebPages.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Deployment.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Razor.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Antlr3.Runtime.pdb
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Newtonsoft.Json.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\EntityFramework.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\EntityFramework.SqlServer.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Google.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\obj\Debug\QuickBook.csprojResolveAssemblyReference.cache
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\obj\Debug\QuickBook.dll
+E:\Sell Management system(POS)\POS\QuickBook\QuickBook\obj\Debug\QuickBook.pdb
+H:\POS\QuickBook\QuickBook\bin\ApplicationInsights.config
+H:\POS\QuickBook\QuickBook\bin\roslyn\csc.exe
+H:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\POS\QuickBook\QuickBook\bin\roslyn\System.Collections.Immutable.dll
+H:\POS\QuickBook\QuickBook\bin\roslyn\System.Reflection.Metadata.dll
+H:\POS\QuickBook\QuickBook\bin\roslyn\vbc.exe
+H:\POS\QuickBook\QuickBook\bin\roslyn\VBCSCompiler.exe
+H:\POS\QuickBook\QuickBook\bin\roslyn\VBCSCompiler.exe.config
+H:\POS\QuickBook\QuickBook\bin\QuickBook.dll.config
+H:\POS\QuickBook\QuickBook\bin\QuickBook.dll
+H:\POS\QuickBook\QuickBook\bin\QuickBook.pdb
+H:\POS\QuickBook\QuickBook\bin\Antlr3.Runtime.dll
+H:\POS\QuickBook\QuickBook\bin\EntityFramework.dll
+H:\POS\QuickBook\QuickBook\bin\EntityFramework.SqlServer.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AI.Agent.Intercept.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AI.DependencyCollector.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AI.Web.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AI.WindowsServer.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.ApplicationInsights.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Core.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Cookies.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Facebook.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Google.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.OAuth.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Twitter.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Web.Infrastructure.dll
+H:\POS\QuickBook\QuickBook\bin\Newtonsoft.Json.dll
+H:\POS\QuickBook\QuickBook\bin\Owin.dll
+H:\POS\QuickBook\QuickBook\bin\System.Web.Helpers.dll
+H:\POS\QuickBook\QuickBook\bin\System.Web.Mvc.dll
+H:\POS\QuickBook\QuickBook\bin\System.Web.Optimization.dll
+H:\POS\QuickBook\QuickBook\bin\System.Web.Razor.dll
+H:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Deployment.dll
+H:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.dll
+H:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Razor.dll
+H:\POS\QuickBook\QuickBook\bin\WebGrease.dll
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AI.DependencyCollector.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AI.Web.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AI.WindowsServer.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.ApplicationInsights.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\POS\QuickBook\QuickBook\bin\System.Web.Helpers.xml
+H:\POS\QuickBook\QuickBook\bin\System.Web.Mvc.xml
+H:\POS\QuickBook\QuickBook\bin\System.Web.Optimization.xml
+H:\POS\QuickBook\QuickBook\bin\System.Web.Razor.xml
+H:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.xml
+H:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Deployment.xml
+H:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Razor.xml
+H:\POS\QuickBook\QuickBook\bin\Antlr3.Runtime.pdb
+H:\POS\QuickBook\QuickBook\bin\Newtonsoft.Json.xml
+H:\POS\QuickBook\QuickBook\bin\EntityFramework.xml
+H:\POS\QuickBook\QuickBook\bin\EntityFramework.SqlServer.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Core.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Facebook.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Cookies.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.OAuth.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Google.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Twitter.xml
+H:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\POS\QuickBook\QuickBook\obj\Debug\QuickBook.dll
+H:\POS\QuickBook\QuickBook\obj\Debug\QuickBook.pdb
+F:\POS\QuickBook\QuickBook\bin\ApplicationInsights.config
+F:\POS\QuickBook\QuickBook\bin\roslyn\csc.exe
+F:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\POS\QuickBook\QuickBook\bin\roslyn\System.Collections.Immutable.dll
+F:\POS\QuickBook\QuickBook\bin\roslyn\System.Reflection.Metadata.dll
+F:\POS\QuickBook\QuickBook\bin\roslyn\vbc.exe
+F:\POS\QuickBook\QuickBook\bin\roslyn\VBCSCompiler.exe
+F:\POS\QuickBook\QuickBook\bin\roslyn\VBCSCompiler.exe.config
+F:\POS\QuickBook\QuickBook\bin\QuickBook.dll.config
+F:\POS\QuickBook\QuickBook\bin\QuickBook.dll
+F:\POS\QuickBook\QuickBook\bin\QuickBook.pdb
+F:\POS\QuickBook\QuickBook\bin\Antlr3.Runtime.dll
+F:\POS\QuickBook\QuickBook\bin\EntityFramework.dll
+F:\POS\QuickBook\QuickBook\bin\EntityFramework.SqlServer.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AI.Agent.Intercept.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AI.DependencyCollector.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AI.Web.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AI.WindowsServer.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.ApplicationInsights.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Core.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Cookies.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Facebook.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Google.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.OAuth.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Twitter.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Web.Infrastructure.dll
+F:\POS\QuickBook\QuickBook\bin\Newtonsoft.Json.dll
+F:\POS\QuickBook\QuickBook\bin\Owin.dll
+F:\POS\QuickBook\QuickBook\bin\System.Web.Helpers.dll
+F:\POS\QuickBook\QuickBook\bin\System.Web.Mvc.dll
+F:\POS\QuickBook\QuickBook\bin\System.Web.Optimization.dll
+F:\POS\QuickBook\QuickBook\bin\System.Web.Razor.dll
+F:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Deployment.dll
+F:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.dll
+F:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Razor.dll
+F:\POS\QuickBook\QuickBook\bin\WebGrease.dll
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AI.DependencyCollector.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AI.Web.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AI.WindowsServer.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.ApplicationInsights.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\POS\QuickBook\QuickBook\bin\System.Web.Helpers.xml
+F:\POS\QuickBook\QuickBook\bin\System.Web.Mvc.xml
+F:\POS\QuickBook\QuickBook\bin\System.Web.Optimization.xml
+F:\POS\QuickBook\QuickBook\bin\System.Web.Razor.xml
+F:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.xml
+F:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Deployment.xml
+F:\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Razor.xml
+F:\POS\QuickBook\QuickBook\bin\Antlr3.Runtime.pdb
+F:\POS\QuickBook\QuickBook\bin\Newtonsoft.Json.xml
+F:\POS\QuickBook\QuickBook\bin\EntityFramework.xml
+F:\POS\QuickBook\QuickBook\bin\EntityFramework.SqlServer.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Core.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Facebook.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Cookies.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.OAuth.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Google.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Twitter.xml
+F:\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\POS\QuickBook\QuickBook\obj\Debug\QuickBook.dll
+F:\POS\QuickBook\QuickBook\obj\Debug\QuickBook.pdb
+F:\POS\QuickBook\QuickBook\obj\Debug\QuickBook.csprojResolveAssemblyReference.cache
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\obj\Debug\QuickBook.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\obj\Debug\QuickBook.pdb
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\ApplicationInsights.config
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\csc.exe
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\System.Collections.Immutable.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\System.Reflection.Metadata.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\vbc.exe
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\VBCSCompiler.exe
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\roslyn\VBCSCompiler.exe.config
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\QuickBook.dll.config
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\QuickBook.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\QuickBook.pdb
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Antlr3.Runtime.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\EntityFramework.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\EntityFramework.SqlServer.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AI.DependencyCollector.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AI.Web.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AI.WindowsServer.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.ApplicationInsights.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Google.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Web.Infrastructure.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Newtonsoft.Json.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Owin.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.Helpers.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.Mvc.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.Optimization.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.Razor.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Deployment.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.WebPages.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Razor.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\WebGrease.dll
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AI.DependencyCollector.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AI.Web.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AI.WindowsServer.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.ApplicationInsights.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.Helpers.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.Mvc.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.Optimization.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.Razor.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.WebPages.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Deployment.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\System.Web.WebPages.Razor.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Antlr3.Runtime.pdb
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Newtonsoft.Json.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\EntityFramework.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\EntityFramework.SqlServer.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Google.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\obj\Debug\QuickBook.Migrations.InitialCreate.resources
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\obj\Debug\QuickBook.csproj.GenerateResource.Cache
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\obj\Debug\QuickBook.Migrations.modifytest.resources
+D:\Github-tanver\gen-proj-pos\Batch11\POS\QuickBook\QuickBook\obj\Debug\QuickBook.Migrations.modifyadd_com.resources

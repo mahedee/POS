@@ -1,0 +1,86 @@
+﻿@using QuickBook.Models
+@model LoginViewModel
+@{
+            ViewBag.Title = "Login Form";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse-firstpage navbar-fixed-top">
+        <div class="container">
+            <h42><center><b>QuickBook POS Management System</b></center></h42>
+        </div>
+    </div>
+    <div class="container body-content">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        @*<br />*@
+
+        <div class="row">
+            <div class="col-md-1 navbar-left">
+                <img src="/Content/Images/soft_logo.jpg" height="245" width="550" />
+            </div>
+
+            <div class="col-md-6 navbar-brand navbar-right img-thumbnail">
+                <section id="loginForm">
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                        @Html.AntiForgeryToken()
+                        <h41><center><b>User Authentication</b></center></h41>
+                        <hr />
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                            <div class="col-md-10">
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Log in" class="btn btn-default" />
+                            </div>
+                        </div>
+                    }
+                </section>
+            </div>
+
+        </div>
+
+        @*@section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }*@
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="container body-content">
+            @*@RenderBody()*@
+            <hr />
+            <footer>
+                <p>&copy; 2018, Group Project of Training</p>
+            </footer>
+        </div>
+    </div>    
+</body>
+</html>

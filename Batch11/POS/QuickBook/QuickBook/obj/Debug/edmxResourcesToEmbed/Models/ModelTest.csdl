@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PosMangtModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="LinkName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Menus1" Relationship="Self.FK_Menus_Menus" FromRole="Menus" ToRole="Menus1" />
+    <NavigationProperty Name="Menu1" Relationship="Self.FK_Menus_Menus" FromRole="Menus1" ToRole="Menus" />
+  </EntityType>
+  <Association Name="FK_Menus_Menus">
+    <End Role="Menus" Type="Self.Menu" Multiplicity="0..1" />
+    <End Role="Menus1" Type="Self.Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Menus1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PosMangtEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Menus" EntityType="Self.Menu" />
+    <AssociationSet Name="FK_Menus_Menus" Association="Self.FK_Menus_Menus">
+      <End Role="Menus" EntitySet="Menus" />
+      <End Role="Menus1" EntitySet="Menus" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
